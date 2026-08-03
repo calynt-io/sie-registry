@@ -215,21 +215,114 @@ un nouveau hash pour ces 3 cerveaux :
 
 ## Périmètre PREMIER LEAGUE (produit, lancement 21 août 2026)
 
-| Marché | Modèle affiché | Hash d'état | Désigné le | Prochaine revue |
-|---|---|---|---|---|
-| 1X2 | `elo-davidson-v1` | `sha256:93cf543817f538b96141f95d43ed5026458dab7a0f74a0b6b6f5f2fc2d4ac6cc` | 2026-07-06 (gelé et backtesté en juin 2026) | trêve d'octobre 2026 |
-| Score exact | *désignation engagée* | — | au plus tard le 14 août 2026 | — |
-| Over/Under | *désignation engagée* | — | au plus tard le 14 août 2026 | — |
+> **Section soldée le 03/08/2026.** Les désignations Premier League en
+> vigueur vivent désormais dans la section « Périmètre CLUBS » ci-dessous
+> (`poisson-mle-club-pl`, les 4 marchés). Cette section est conservée
+> telle quelle pour la traçabilité : elle documente le premier champion
+> historique du produit et les engagements pré-enregistrés pris avant
+> l'existence de son remplaçant.
 
-**Note technique** : le champ de hash côté PL s'appelle `state_hash` (et non
-`integrity_hash` comme côté international) — une différence de convention
-de nommage entre les deux pipelines, sans conséquence sur la validité du
-mécanisme lui-même. Les deux garantissent la même chose : toute
-modification manuelle de l'état invalide le hash.
+| Marché | Modèle affiché | Hash d'état | Désigné le | Statut au 03/08/2026 |
+|---|---|---|---|---|
+| 1X2 | `elo-davidson-v1` | `sha256:93cf543817f538b96141f95d43ed5026458dab7a0f74a0b6b6f5f2fc2d4ac6cc` | 2026-07-06 (gelé et backtesté en juin 2026) | **Remplacé** par `poisson-mle-club-pl` (désignation sur backtest walk-forward — remplacement d'un champion jamais confronté au live par un modèle mesuré meilleur sur le même historique ; voir périmètre CLUBS) |
+| Score exact | *désignation engagée* | — | au plus tard le 14 août 2026 | **Engagement tenu le 03/08/2026** (11 jours d'avance) : `poisson-mle-club-pl` |
+| Over/Under | *désignation engagée* | — | au plus tard le 14 août 2026 | **Engagement tenu le 03/08/2026** (11 jours d'avance) : `poisson-mle-club-pl` |
+
+**Note technique** : le champ de hash de `elo-davidson-v1` s'appelait
+`state_hash` (et non `integrity_hash` comme côté international) — une
+différence de convention de nommage entre les deux pipelines, sans
+conséquence sur la validité du mécanisme lui-même. Les deux garantissent
+la même chose : toute modification manuelle de l'état invalide le hash.
+Cette convention `state_hash` reste une spécificité historique de ce seul
+gel : le périmètre CLUBS utilise `integrity_hash` (voir sa note de
+nommage).
 
 **Pré-enregistrer une date de désignation avant même d'avoir le modèle
 final est déjà un acte de pré-enregistrement** : cette date ne pourra pas
-être repoussée sans qu'un commit visible ne l'explique.
+être repoussée sans qu'un commit visible ne l'explique. Les deux
+engagements du 14 août ci-dessus ont été tenus le 03/08/2026.
+
+---
+
+## Périmètre CLUBS — championnats classiques (produit, lancement 21 août 2026)
+
+> Quatre premiers cerveaux du moteur Poisson-MLE club, geles le
+> 03/08/2026 a l'issue de l'ablation {decay x rho} du 02-03/08/2026 et de
+> son interpretation par consultation croisee. Architecture commune aux 4
+> championnats (meme moteur, meme vraisemblance) -- la demi-vie de
+> ponderation temporelle est un hyperparametre continu calibre PAR LIGUE
+> (infini admis = pas de decay), exactement le meme statut que nu de
+> Davidson ou le rating d'entree Elo des equipes promues, deja calibres
+> par ligue ailleurs dans ce registre. Rho (Dixon-Coles) absent des 4
+> modeles sans exception -- rejete a l'ablation dans chaque championnat.
+>
+> **Note de nommage** : le champ de hash de ce perimetre s'appelle
+> `integrity_hash` (comme le perimetre international), PAS `state_hash`
+> (specificite historique du seul premier gel PL 1X2 `elo-davidson-v1`,
+> jamais reconduite depuis). Choix fait pour eviter une 3e convention
+> dans un meme perimetre.
+
+| Marché | Modèle affiché | Demi-vie decay | Hash d'état (integrity_hash) | Cutoff | Désigné le |
+|---|---|---|---|---|---|
+| 1X2 / Score exact / Over-Under / Distribution des buts (Premier League) | `poisson-mle-club-pl` | 730 jours | `sha256:e48f03d246d10451ca903ffed633123069c298cb6373151eccad1bed142983bc` | 2026-08-03 | 2026-08-03 |
+| 1X2 / Score exact / Over-Under / Distribution des buts (La Liga) | `poisson-mle-club-la-liga` | 390 jours | `sha256:9c4f622c44afc8750e85de62fe6dc62f9997177b78ec736e2cc5e62b957394cd` | 2026-08-03 | 2026-08-03 |
+| 1X2 / Score exact / Over-Under / Distribution des buts (Ligue 1) | `poisson-mle-club-ligue-1` | ∞ (baseline, aucun gain detecte) | `sha256:0ee4429ebb0f7a2741951df88972d8c1bb6a61a5abd38f68eafcc7244bfd3312` | 2026-08-03 | 2026-08-03 |
+| 1X2 / Score exact / Over-Under / Distribution des buts (Bundesliga) | `poisson-mle-club-bundesliga` | ∞ (baseline, aucun gain detecte) | `sha256:4c24c842cd53c8ac993fcc180759cb7c22ca73834376f47a3d99b963ad870838` | 2026-08-03 | 2026-08-03 |
+
+### Résultats de l'ablation ayant motivé ces désignations
+
+- **Premier League (`decay730`)** : Δ Score exact = -0,00136 vs baseline,
+  p<0,0001 (Holm), stable aux 3 seuils d'eligibilite N=5/10/15, tous les
+  garde-fous de non-inferiorite respectes (1X2, Over/Under, Distribution).
+- **La Liga (`decay390`)** : Δ Score exact = -0,00130 vs baseline,
+  p=0,0018 (Holm), stable aux 3 seuils. `decay730` egalement significatif
+  a l'etape Holm (gain moindre que `decay390`) -- confirme le critere
+  inter-ligues (gain de type decay franchit Holm dans >=2 championnats
+  independants, sous les deux lectures possibles du critere).
+- **Ligue 1 (baseline)** : aucune cellule significative a aucun seuil.
+  Meilleur candidat (`decay730`) plafonne a p=0,087-0,121 selon le seuil.
+  IC bootstrap 95% du Δ vs baseline : [-0,00079 ; +0,00007] -- exclut la
+  taille d'effet mesuree en PL/La Liga (~-0,0013). Test formel de
+  difference inter-ligues (Δ_Ligue1 - Δ_PL) : p=0,0046, rejette
+  l'hypothese d'un effet de meme taille masque par un simple deficit de
+  puissance (reserve : le Δ PL compare est celui de sa cellule gagnante,
+  donc potentiellement gonfle en magnitude par selection -- winner's
+  curse). Les donnees restent compatibles avec un effet nul comme avec un
+  effet reel plus petit qu'en PL/La Liga -- indistinguables sur cette
+  fenetre. Reexaminable a une fenetre pre-enregistree future, jamais en
+  rouvrant la presente ablation.
+- **Bundesliga (baseline)** : une seule cellule a atteint la
+  significativite (`decay730_rho`, seuil N>=15 seulement, p=0,0024) mais
+  rejetee par le garde-fou Over/Under -- rejet de fond, pas un deficit de
+  detection. `decay180` significativement PIRE que la reference
+  (observation descriptive, hors famille de tests formels -- la famille
+  de tests etait unilaterale, orientee detection d'amelioration).
+
+### Équipes promues 2026-27 et prior synthétique
+
+Pour chaque championnat, une seule equipe promue etait reellement absente
+de la fenetre d'historique (2016-2026) et a recu le traitement
+`new_team_policy="promoted_prior"` (prior v0 empirique,
+`promoted_priors_v0.json`, calibration provisoire -- Phase 2 de
+calibration MLE complete a faire avant le 13/08). Les autres equipes
+promues de chaque championnat avaient deja un historique reel dans la
+fenetre et ont ete estimees normalement par la MLE, sans prior
+synthetique.
+
+| Championnat | Équipe avec prior | Statut du nom utilisé |
+|---|---|---|
+| Premier League | Coventry | Vérifié (grep direct dans l'historique confirme l'absence, alias déjà en place) |
+| La Liga | Santander | Vérifié (grep SP2, 03/08/2026) |
+| Ligue 1 | Le Mans | Vérifié (grep F2, 03/08/2026) |
+| Bundesliga | Elversberg | Vérifié (grep D2, 03/08/2026) |
+
+**Note de vérification** : les 3 équipes La Liga / Ligue 1 / Bundesliga
+étant promues depuis la deuxième division de leur pays, leur nom a été
+confirmé directement dans le fichier de deuxième division de la même
+source (`football-data.co.uk` — fichiers SP2/F2/D2, même convention de
+nommage que la première division), le 03/08/2026, avant publication —
+méthode symétrique à la vérification déjà faite pour Coventry. Aucune
+divergence : les 4 gels utilisent des noms d'équipes confirmés.
 
 ---
 
@@ -241,3 +334,4 @@ final est déjà un acte de pré-enregistrement** : cette date ne pourra pas
 | 2026-07-21 | Audit de cohérence du registre public : ajout de `elo-davidson-wc-v2` (omission depuis la création, corrigée), `elo-davidson-wc-poisson-mle`, `elo-davidson-wc-negbin-mle`, `elo-davidson-wc-ens-mle` (migration MLE du 19/07, enregistrés avec retard) comme challengers. Statut de `elo-davidson-wc-poisson-v2` actualisé (backfilling 104/104 matchs, branchement production) — limite du périmètre `world-cup` de `predictor_intl.py` notée explicitement. |
 | 2026-07-22 | Première promotion du roster CdM (`elo-davidson-wc-ens-mle`, marché 1X2) à l'issue du protocole complet P0-P4 — remplace `elo-davidson-wc-v1`. Désignation officielle de `elo-davidson-wc-poisson` sur le marché "Distribution des buts" (jamais enregistré avant ce jour). Ajout de la règle de gouvernance P0 (pipeline de maintenance fonctionnel requis). `elo-davidson-wc-ens` (ensemble classique) et `elo-davidson-wc-poisson-v2` explicitement non promus malgré des statistiques favorables — voir section "Décision de promotion du 22 juillet 2026". |
 | 2026-07-24 | Renommage complet du roster CdM vers "International" (`elo-davidson-wc-*` → `elo-davidson-intl-*`), 19 cerveaux, par filiation explicite (aucune donnée historique modifiée ni supprimée, voir section "Renommage CdM → International"). Correction d'un bug d'intégrité découvert au passage : les 3 cerveaux MLE (`poisson-mle`, `negbin-mle`, `ens-mle`) avaient un `model_key` interne erroné depuis leur création le 19/07, jamais détecté avant ce jour, corrigé avec republication de leurs 3 hashs. Le champion 1X2 (précédemment `elo-davidson-wc-ens-mle`) est renommé `elo-davidson-intl-ens-mle`, avec son nouveau hash corrigé. |
+| 2026-08-03 | Première désignation du périmètre CLUBS (championnats classiques) : 4 model_keys `poisson-mle-club-{pl,la-liga,ligue-1,bundesliga}`, à l'issue de l'ablation {decay×ρ} du 02-03/08 et de son interprétation par consultation croisée (incluant un test statistique formel construit pour trancher la formulation Ligue 1). Convention `integrity_hash` retenue pour ce périmètre (pas `state_hash`, spécificité historique isolée du premier gel PL 1X2). Les noms des 4 équipes promues traitées par prior ont été vérifiés avant publication (Coventry par grep de l'historique élite ; Santander, Le Mans, Elversberg par grep des fichiers SP2/F2/D2 de la même source, même convention de nommage). Section « Périmètre PREMIER LEAGUE » soldée dans le même commit : `elo-davidson-v1` marqué remplacé par `poisson-mle-club-pl` (1X2), engagements Score exact / Over-Under du 14/08 tenus avec 11 jours d'avance. |

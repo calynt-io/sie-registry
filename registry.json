@@ -256,15 +256,115 @@
           "champion_hash_field_name_note": "state_hash côté PL, integrity_hash côté international — même mécanisme, nommage différent",
           "designated_at": "2026-07-06",
           "frozen_at": "2026-06 (backtest 4180 matchs)",
-          "next_review": "trêve d'octobre 2026"
+          "next_review": "n/a (remplacé le 2026-08-03)",
+          "status": "remplacé",
+          "superseded_by": "poisson-mle-club-pl",
+          "superseded_at": "2026-08-03",
+          "superseded_note": "Remplacement par désignation sur backtest walk-forward — champion jamais confronté au live remplacé par un modèle mesuré meilleur sur le même historique ; pas une promotion P0-P4. elo-davidson-v1 reste inerte : fichier d'état et historique de prédictions conservés intacts."
         },
         "score_exact": {
-          "champion_model_key": null,
-          "designation_engaged_by": "2026-08-14"
+          "champion_model_key": "poisson-mle-club-pl",
+          "designation_engaged_by": "2026-08-14",
+          "engagement_held_at": "2026-08-03",
+          "engagement_note": "Engagement du 2026-08-14 tenu avec 11 jours d'avance : poisson-mle-club-pl (voir perimeters.clubs)"
         },
         "over_under": {
-          "champion_model_key": null,
-          "designation_engaged_by": "2026-08-14"
+          "champion_model_key": "poisson-mle-club-pl",
+          "designation_engaged_by": "2026-08-14",
+          "engagement_held_at": "2026-08-03",
+          "engagement_note": "Engagement du 2026-08-14 tenu avec 11 jours d'avance : poisson-mle-club-pl (voir perimeters.clubs)"
+        }
+      },
+      "section_note": "Section soldée le 2026-08-03 — les désignations Premier League en vigueur vivent dans perimeters.clubs (poisson-mle-club-pl, 4 marchés). Conservée intacte pour traçabilité, cohérent avec le principe de filiation du renommage CdM→International (2026-07-24) : jamais de suppression."
+    },
+    "clubs": {
+      "status": "produit — lancements : La Liga 2026-08-14, Premier League 2026-08-21, Ligue 1 2026-08-23, Bundesliga 2026-08-28",
+      "architecture_note": "Architecture commune aux 4 championnats (moteur Poisson-MLE club, même vraisemblance). La demi-vie de pondération temporelle est un hyperparamètre continu calibré PAR LIGUE (infini admis = pas de decay), même statut que ν de Davidson ou le rating d'entrée Elo des promus. ρ (Dixon-Coles) absent des 4 modèles — rejeté à l'ablation dans chaque championnat.",
+      "hash_field_name_note": "integrity_hash (comme le périmètre international), PAS state_hash — la convention state_hash reste une spécificité historique du seul premier gel PL 1X2 elo-davidson-v1, jamais reconduite",
+      "leagues": {
+        "premier_league": {
+          "champion_model_key": "poisson-mle-club-pl",
+          "integrity_hash": "sha256:e48f03d246d10451ca903ffed633123069c298cb6373151eccad1bed142983bc",
+          "markets_covered": [
+            "1X2",
+            "score_exact",
+            "over_under",
+            "nb_buts_distribution"
+          ],
+          "decay_half_life_days": 730,
+          "rho_dixon_coles": false,
+          "cutoff": "2026-08-03",
+          "designated_at": "2026-08-03",
+          "designation_reason": "désigné sur backtest walk-forward (ablation {decay×ρ} 02-03/08/2026), jamais promu — le compteur P1 live démarre au premier match de la ligue",
+          "ablation_result": "decay730 retenu : Δ Score exact = -0,00136 vs baseline, p<0,0001 (Holm), stable aux 3 seuils N=5/10/15, garde-fous de non-infériorité tous respectés (1X2, Over/Under, Distribution).",
+          "promoted_team_prior": {
+            "team": "Coventry",
+            "policy": "promoted_prior v0 (promoted_priors_v0.json, provisoire — calibration MLE Phase 2 avant le 2026-08-13)",
+            "name_verification": "Vérifié (grep direct historique élite — absence confirmée, alias en place)"
+          }
+        },
+        "la_liga": {
+          "champion_model_key": "poisson-mle-club-la-liga",
+          "integrity_hash": "sha256:9c4f622c44afc8750e85de62fe6dc62f9997177b78ec736e2cc5e62b957394cd",
+          "markets_covered": [
+            "1X2",
+            "score_exact",
+            "over_under",
+            "nb_buts_distribution"
+          ],
+          "decay_half_life_days": 390,
+          "rho_dixon_coles": false,
+          "cutoff": "2026-08-03",
+          "designated_at": "2026-08-03",
+          "designation_reason": "désigné sur backtest walk-forward (ablation {decay×ρ} 02-03/08/2026), jamais promu — le compteur P1 live démarre au premier match de la ligue",
+          "ablation_result": "decay390 retenu : Δ Score exact = -0,00130 vs baseline, p=0,0018 (Holm), stable aux 3 seuils. decay730 également significatif (gain moindre) — critère inter-ligues confirmé sous ses deux lectures possibles (même cellule significative dans ≥2 championnats indépendants).",
+          "promoted_team_prior": {
+            "team": "Santander",
+            "policy": "promoted_prior v0 (promoted_priors_v0.json, provisoire — calibration MLE Phase 2 avant le 2026-08-13)",
+            "name_verification": "Vérifié (grep SP2 football-data.co.uk, 2026-08-03, même convention de nommage que la première division)"
+          }
+        },
+        "ligue_1": {
+          "champion_model_key": "poisson-mle-club-ligue-1",
+          "integrity_hash": "sha256:0ee4429ebb0f7a2741951df88972d8c1bb6a61a5abd38f68eafcc7244bfd3312",
+          "markets_covered": [
+            "1X2",
+            "score_exact",
+            "over_under",
+            "nb_buts_distribution"
+          ],
+          "decay_half_life_days": null,
+          "rho_dixon_coles": false,
+          "cutoff": "2026-08-03",
+          "designated_at": "2026-08-03",
+          "designation_reason": "désigné sur backtest walk-forward (ablation {decay×ρ} 02-03/08/2026), jamais promu — le compteur P1 live démarre au premier match de la ligue",
+          "ablation_result": "Baseline retenue (aucune cellule significative à aucun seuil). Meilleur candidat decay730 : p=0,087-0,121 selon le seuil, IC bootstrap 95% du Δ [-0,00079 ; +0,00007] — exclut la taille d'effet PL/La Liga (~-0,0013). Test formel de différence inter-ligues (Δ_Ligue1 - Δ_PL) : p=0,0046, rejette l'hypothèse d'un effet de même taille masqué par le seul déficit de puissance (réserve : Δ PL post-sélection, winner's curse). Données compatibles avec un effet nul comme avec un effet réel plus petit — indistinguables sur cette fenêtre. Réexaminable à une fenêtre pré-enregistrée future, jamais en rouvrant la présente ablation.",
+          "promoted_team_prior": {
+            "team": "Le Mans",
+            "policy": "promoted_prior v0 (promoted_priors_v0.json, provisoire — calibration MLE Phase 2 avant le 2026-08-13)",
+            "name_verification": "Vérifié (grep F2 football-data.co.uk, 2026-08-03, même convention de nommage que la première division)"
+          }
+        },
+        "bundesliga": {
+          "champion_model_key": "poisson-mle-club-bundesliga",
+          "integrity_hash": "sha256:4c24c842cd53c8ac993fcc180759cb7c22ca73834376f47a3d99b963ad870838",
+          "markets_covered": [
+            "1X2",
+            "score_exact",
+            "over_under",
+            "nb_buts_distribution"
+          ],
+          "decay_half_life_days": null,
+          "rho_dixon_coles": false,
+          "cutoff": "2026-08-03",
+          "designated_at": "2026-08-03",
+          "designation_reason": "désigné sur backtest walk-forward (ablation {decay×ρ} 02-03/08/2026), jamais promu — le compteur P1 live démarre au premier match de la ligue",
+          "ablation_result": "Baseline retenue. Une seule cellule significative (decay730_rho, N≥15 seulement, p=0,0024) rejetée par le garde-fou Over/Under — rejet de fond, pas déficit de détection. decay180 significativement PIRE que la référence (observation descriptive, hors famille de tests formels — famille unilatérale orientée détection d'amélioration).",
+          "promoted_team_prior": {
+            "team": "Elversberg",
+            "policy": "promoted_prior v0 (promoted_priors_v0.json, provisoire — calibration MLE Phase 2 avant le 2026-08-13)",
+            "name_verification": "Vérifié (grep D2 football-data.co.uk, 2026-08-03, même convention de nommage que la première division)"
+          }
         }
       }
     }
@@ -376,6 +476,10 @@
     {
       "date": "2026-07-24",
       "change": "Renommage complet du roster CdM vers 'International' (elo-davidson-wc-* -> elo-davidson-intl-*), 19 cerveaux, par filiation explicite (aucune donnée historique modifiée ni supprimée, voir migration_wc_to_intl). Correction d'un bug d'intégrité découvert au passage : les 3 cerveaux MLE (poisson-mle, negbin-mle, ens-mle) avaient un model_key interne erroné depuis leur création le 19/07, jamais détecté avant ce jour, corrigé avec republication de leurs 3 hashs (voir integrity_correction). Le champion 1X2 (précédemment elo-davidson-wc-ens-mle) est renommé elo-davidson-intl-ens-mle, avec son nouveau hash corrigé."
+    },
+    {
+      "date": "2026-08-03",
+      "change": "Première désignation du périmètre CLUBS (championnats classiques) : 4 model_keys poisson-mle-club-{pl,la-liga,ligue-1,bundesliga}, à l'issue de l'ablation {decay×ρ} du 02-03/08 et de son interprétation par consultation croisée (incluant un test statistique formel construit pour trancher la formulation Ligue 1). Convention integrity_hash retenue pour ce périmètre (pas state_hash, spécificité historique isolée du premier gel PL 1X2). Les noms des 4 équipes promues traitées par prior ont été vérifiés avant publication (Coventry par grep de l'historique élite ; Santander, Le Mans, Elversberg par grep des fichiers SP2/F2/D2 de la même source, même convention de nommage). Section premier_league soldée dans le même commit : elo-davidson-v1 marqué remplacé par poisson-mle-club-pl (1X2, jamais supprimé — fichier d'état et historique conservés), engagements score_exact/over_under du 14/08 tenus avec 11 jours d'avance."
     }
   ]
 }
