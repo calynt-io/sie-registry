@@ -1,48 +1,439 @@
 {
-  "timestamp": "2026-08-06T05:33:22.065744+00:00",
-  "perimeters": [
+  "_avertissement": "MIROIR PUBLIC généré automatiquement depuis Supabase (table model_registry). La production NE lit JAMAIS ce fichier : export_predictions_public.py interroge Supabase en direct (is_champion=true) à chaque exécution. Ce fichier est publié pour la transparence du lecteur. Régénérer : python3 generer_registry_public.py. key_role : 'historique' (préfixe -wc-, sous lequel vivent les prédictions) et 'canonique' (préfixe -intl-, identité post-renommage du 24/07/2026) sont des PAIRES appariées via la table models — les deux sont porteuses, aucune n'est un doublon supprimable ; 'autonome' = pas concerné par le renommage (clubs, PL). VERSION PUBLIQUE : champs label/notes retirés (aucun détail de paramétrage ni d'ablation exposé).",
+  "source_of_truth": "Supabase.model_registry (is_champion=true, lu en direct par export_predictions_public.py)",
+  "generated_from": "Supabase.model_registry",
+  "generated_at": "2026-08-10T16:44:27.968858+00:00",
+  "public_filtered": true,
+  "model_count": 43,
+  "models": [
     {
-      "name": "poisson-mle-club",
-      "description": "Poisson MLE — Modèles club (PL, La Liga, Ligue 1, Bundesliga)",
-      "designations": [
-        {
-          "model_key": "poisson-mle-club-pl",
-          "competition": "Premier League",
-          "hash": "e1b165ad5b568048cdb37b01f72665aa141fdc25e863c9c2c595f78d04e7d0ca",
-          "cutoff_date": "2026-08-06",
-          "designation_date": "2026-08-06T05:33:22.065744+00:00",
-          "method": "Poisson MLE",
-          "note": "Designé sur backtest, jamais promu. Walk-forward sans fuite."
-        },
-        {
-          "model_key": "poisson-mle-club-la-liga",
-          "competition": "La Liga",
-          "hash": "20bb2beec4a060397da4e3402ea065260da2969fd3161a5e2af5a916eba318a5",
-          "cutoff_date": "2026-08-06",
-          "designation_date": "2026-08-06T05:33:22.065744+00:00",
-          "method": "Poisson MLE",
-          "note": "Designé sur backtest, jamais promu. Walk-forward sans fuite."
-        },
-        {
-          "model_key": "poisson-mle-club-ligue-1",
-          "competition": "Ligue 1",
-          "hash": "b65bb11644f1b8f84732462be58fe9d1a4ec02df497e3dff839df800871499ae",
-          "cutoff_date": "2026-08-06",
-          "designation_date": "2026-08-06T05:33:22.065744+00:00",
-          "method": "Poisson MLE",
-          "note": "Designé sur backtest, jamais promu. Walk-forward sans fuite."
-        },
-        {
-          "model_key": "poisson-mle-club-bundesliga",
-          "competition": "Bundesliga",
-          "hash": "7e0a68f22f58d2a98deb47f220a269a09170cdc30ff454b81115dde527bc75cd",
-          "cutoff_date": "2026-08-06",
-          "designation_date": "2026-08-06T05:33:22.065744+00:00",
-          "method": "Poisson MLE",
-          "note": "Designé sur backtest, jamais promu. Walk-forward sans fuite."
-        }
-      ]
+      "model_key": "poisson-mle-club-bundesliga",
+      "competition_key": "bundesliga",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-08-04T15:46:41.368094+00:00",
+      "key_role": "autonome",
+      "hash": "7e0a68f22f58d2a98deb47f220a269a09170cdc30ff454b81115dde527bc75cd"
+    },
+    {
+      "model_key": "poisson-mle-club-la-liga",
+      "competition_key": "la-liga",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-08-04T15:46:41.368094+00:00",
+      "key_role": "autonome",
+      "hash": "20bb2beec4a060397da4e3402ea065260da2969fd3161a5e2af5a916eba318a5"
+    },
+    {
+      "model_key": "poisson-mle-club-ligue-1",
+      "competition_key": "ligue-1",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-08-04T15:46:41.368094+00:00",
+      "key_role": "autonome",
+      "hash": "b65bb11644f1b8f84732462be58fe9d1a4ec02df497e3dff839df800871499ae"
+    },
+    {
+      "model_key": "elo-davidson-v1",
+      "competition_key": "premier-league",
+      "status": "challenger",
+      "is_champion": false,
+      "market": "1X2",
+      "registered_at": "2026-06-27T20:44:30.658669+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "poisson-mle-club-pl",
+      "competition_key": "premier-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-08-04T15:46:41.368094+00:00",
+      "key_role": "autonome",
+      "hash": "e1b165ad5b568048cdb37b01f72665aa141fdc25e863c9c2c595f78d04e7d0ca"
+    },
+    {
+      "model_key": "elo-davidson-intl-ens",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "key_role": "canonique",
+      "historical_key": "elo-davidson-wc-ens"
+    },
+    {
+      "model_key": "elo-davidson-intl-ens-mle",
+      "competition_key": "world-cup",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "key_role": "canonique",
+      "historical_key": "elo-davidson-wc-ens-mle"
+    },
+    {
+      "model_key": "elo-davidson-intl-gd",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "key_role": "canonique",
+      "historical_key": "elo-davidson-wc-gd"
+    },
+    {
+      "model_key": "elo-davidson-intl-hfa",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "key_role": "canonique",
+      "historical_key": "elo-davidson-wc-hfa"
+    },
+    {
+      "model_key": "elo-davidson-intl-hfat",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "key_role": "canonique",
+      "historical_key": "elo-davidson-wc-hfat"
+    },
+    {
+      "model_key": "elo-davidson-intl-l10",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "key_role": "canonique",
+      "historical_key": "elo-davidson-wc-l10"
+    },
+    {
+      "model_key": "elo-davidson-intl-l11",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "key_role": "canonique",
+      "historical_key": "elo-davidson-wc-l11"
+    },
+    {
+      "model_key": "elo-davidson-intl-l12",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "key_role": "canonique",
+      "historical_key": "elo-davidson-wc-l12"
+    },
+    {
+      "model_key": "elo-davidson-intl-l13",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "key_role": "canonique",
+      "historical_key": "elo-davidson-wc-l13"
+    },
+    {
+      "model_key": "elo-davidson-intl-l14",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "key_role": "canonique",
+      "historical_key": "elo-davidson-wc-l14"
+    },
+    {
+      "model_key": "elo-davidson-intl-negbin",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "key_role": "canonique",
+      "historical_key": "elo-davidson-wc-negbin"
+    },
+    {
+      "model_key": "elo-davidson-intl-negbin-mle",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "key_role": "canonique",
+      "historical_key": "elo-davidson-wc-negbin-mle"
+    },
+    {
+      "model_key": "elo-davidson-intl-poisson",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "key_role": "canonique",
+      "historical_key": "elo-davidson-wc-poisson"
+    },
+    {
+      "model_key": "elo-davidson-intl-poisson-mle",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "key_role": "canonique",
+      "historical_key": "elo-davidson-wc-poisson-mle"
+    },
+    {
+      "model_key": "elo-davidson-intl-poisson-v2",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "key_role": "canonique",
+      "historical_key": "elo-davidson-wc-poisson-v2"
+    },
+    {
+      "model_key": "elo-davidson-intl-v1",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "key_role": "canonique",
+      "historical_key": "elo-davidson-wc-v1"
+    },
+    {
+      "model_key": "elo-davidson-intl-v2",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "key_role": "canonique",
+      "historical_key": "elo-davidson-wc-v2"
+    },
+    {
+      "model_key": "elo-davidson-intl-w24",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "key_role": "canonique",
+      "historical_key": "elo-davidson-wc-w24"
+    },
+    {
+      "model_key": "elo-davidson-intl-w24t",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "key_role": "canonique",
+      "historical_key": "elo-davidson-wc-w24t"
+    },
+    {
+      "model_key": "elo-davidson-wc-ens",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-07-01T11:28:24.303435+00:00",
+      "key_role": "historique",
+      "canonical_key": "elo-davidson-intl-ens"
+    },
+    {
+      "model_key": "elo-davidson-wc-ens-mle",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": "1X2",
+      "registered_at": "2026-07-19T17:32:54.980174+00:00",
+      "key_role": "historique",
+      "canonical_key": "elo-davidson-intl-ens-mle"
+    },
+    {
+      "model_key": "elo-davidson-wc-gd",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-06-29T19:17:20.227141+00:00",
+      "key_role": "historique",
+      "canonical_key": "elo-davidson-intl-gd"
+    },
+    {
+      "model_key": "elo-davidson-wc-hfa",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-06-29T18:34:15.648647+00:00",
+      "key_role": "historique",
+      "canonical_key": "elo-davidson-intl-hfa"
+    },
+    {
+      "model_key": "elo-davidson-wc-hfat",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-06-29T18:34:15.648647+00:00",
+      "key_role": "historique",
+      "canonical_key": "elo-davidson-intl-hfat"
+    },
+    {
+      "model_key": "elo-davidson-wc-l10",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-06-28T14:04:02.941024+00:00",
+      "key_role": "historique",
+      "canonical_key": "elo-davidson-intl-l10"
+    },
+    {
+      "model_key": "elo-davidson-wc-l11",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-06-28T14:04:02.941024+00:00",
+      "key_role": "historique",
+      "canonical_key": "elo-davidson-intl-l11"
+    },
+    {
+      "model_key": "elo-davidson-wc-l12",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-06-28T14:04:02.941024+00:00",
+      "key_role": "historique",
+      "canonical_key": "elo-davidson-intl-l12"
+    },
+    {
+      "model_key": "elo-davidson-wc-l13",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-06-28T14:04:02.941024+00:00",
+      "key_role": "historique",
+      "canonical_key": "elo-davidson-intl-l13"
+    },
+    {
+      "model_key": "elo-davidson-wc-l14",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-06-28T14:04:02.941024+00:00",
+      "key_role": "historique",
+      "canonical_key": "elo-davidson-intl-l14"
+    },
+    {
+      "model_key": "elo-davidson-wc-negbin",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-07-13T18:36:11.595037+00:00",
+      "key_role": "historique",
+      "canonical_key": "elo-davidson-intl-negbin"
+    },
+    {
+      "model_key": "elo-davidson-wc-negbin-mle",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-07-19T17:32:54.980174+00:00",
+      "key_role": "historique",
+      "canonical_key": "elo-davidson-intl-negbin-mle"
+    },
+    {
+      "model_key": "elo-davidson-wc-poisson",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-07-01T11:28:24.303435+00:00",
+      "key_role": "historique",
+      "canonical_key": "elo-davidson-intl-poisson"
+    },
+    {
+      "model_key": "elo-davidson-wc-poisson-mle",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-07-19T17:32:54.980174+00:00",
+      "key_role": "historique",
+      "canonical_key": "elo-davidson-intl-poisson-mle"
+    },
+    {
+      "model_key": "elo-davidson-wc-poisson-v2",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-07-20T19:21:39.36548+00:00",
+      "key_role": "historique",
+      "canonical_key": "elo-davidson-intl-poisson-v2"
+    },
+    {
+      "model_key": "elo-davidson-wc-v1",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-06-27T20:44:30.658669+00:00",
+      "key_role": "historique",
+      "canonical_key": "elo-davidson-intl-v1"
+    },
+    {
+      "model_key": "elo-davidson-wc-v2",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-06-27T20:44:30.658669+00:00",
+      "key_role": "historique",
+      "canonical_key": "elo-davidson-intl-v2"
+    },
+    {
+      "model_key": "elo-davidson-wc-w24",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-06-29T18:05:45.462155+00:00",
+      "key_role": "historique",
+      "canonical_key": "elo-davidson-intl-w24"
+    },
+    {
+      "model_key": "elo-davidson-wc-w24t",
+      "competition_key": "world-cup",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-06-29T18:05:45.462155+00:00",
+      "key_role": "historique",
+      "canonical_key": "elo-davidson-intl-w24t"
     }
-  ],
-  "revisions": []
+  ]
 }
