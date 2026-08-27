@@ -1,15 +1,21 @@
 # REGISTRY — Sports Intelligence Engine (miroir public)
 
-> ⚠️ **Miroir généré automatiquement depuis Supabase `model_registry` le 2026-08-10T16:44:27.968858+00:00.**
+> ⚠️ **Miroir généré automatiquement depuis Supabase `model_registry` le 2026-08-27T11:05:41.922723+00:00.**
 > La production **ne lit jamais ce fichier** — `export_predictions_public.py`
 > interroge la table Supabase **en direct** (`is_champion = true`). Ce document
 > est publié pour la **transparence du lecteur**, régénéré par `generer_registry_public.py`.
 >
 > 🔒 **Version publique** : les champs `label`/`notes` (détail de paramétrage, ablations) sont volontairement retirés.
 
-**Total : 43 modèles enregistrés** — 5 champion(s) désigné(s), 38 challenger(s).
+**Total : 48 modèles enregistrés** — 10 champion(s) désigné(s), 38 challenger(s).
 
 > ℹ️ **Renommage CdM→International (24/07/2026).** 19 clés `historique` (préfixe `-wc-`, sous lesquelles vivent les prédictions en base) sont appariées 1-pour-1 à 19 clés `canonique` (préfixe `-intl-`, identité post-renommage) via la table `models`. **Les deux sont porteuses** — aucune n'est un doublon supprimable. `autonome` = hors renommage (clubs, PL).
+
+## brasileirao (1)
+
+| model_key | rôle clé | paire | statut | champion | marché | hash |
+|---|---|---|---|---|---|---|
+| `poisson-mle-club-brasileirao` | autonome |  | champion | ✅ |  |  |
 
 ## bundesliga (1)
 
@@ -17,24 +23,48 @@
 |---|---|---|---|---|---|---|
 | `poisson-mle-club-bundesliga` | autonome |  | champion | ✅ |  | `7e0a68f22f58…` |
 
+## championship (1)
+
+| model_key | rôle clé | paire | statut | champion | marché | hash |
+|---|---|---|---|---|---|---|
+| `poisson-mle-club-championship` | autonome |  | champion | ✅ |  | `d9eb1658a922…` |
+
+## eredivisie (1)
+
+| model_key | rôle clé | paire | statut | champion | marché | hash |
+|---|---|---|---|---|---|---|
+| `poisson-mle-club-eredivisie` | autonome |  | champion | ✅ |  | `a935d6be8f95…` |
+
 ## la-liga (1)
 
 | model_key | rôle clé | paire | statut | champion | marché | hash |
 |---|---|---|---|---|---|---|
-| `poisson-mle-club-la-liga` | autonome |  | champion | ✅ |  | `20bb2beec4a0…` |
+| `poisson-mle-club-la-liga` | autonome |  | champion | ✅ |  | `36b629295a83…` |
 
 ## ligue-1 (1)
 
 | model_key | rôle clé | paire | statut | champion | marché | hash |
 |---|---|---|---|---|---|---|
-| `poisson-mle-club-ligue-1` | autonome |  | champion | ✅ |  | `b65bb11644f1…` |
+| `poisson-mle-club-ligue-1` | autonome |  | champion | ✅ |  | `621ae1b8e5f9…` |
 
 ## premier-league (2)
 
 | model_key | rôle clé | paire | statut | champion | marché | hash |
 |---|---|---|---|---|---|---|
 | `elo-davidson-v1` | autonome |  | challenger |  | 1X2 |  |
-| `poisson-mle-club-pl` | autonome |  | champion | ✅ |  | `e1b165ad5b56…` |
+| `poisson-mle-club-pl` | autonome |  | champion | ✅ |  | `c2b71a4012c6…` |
+
+## primeira-liga (1)
+
+| model_key | rôle clé | paire | statut | champion | marché | hash |
+|---|---|---|---|---|---|---|
+| `poisson-mle-club-primeira-liga` | autonome |  | champion | ✅ |  | `93a2eb1014cf…` |
+
+## serie-a (1)
+
+| model_key | rôle clé | paire | statut | champion | marché | hash |
+|---|---|---|---|---|---|---|
+| `poisson-mle-club-serie-a` | autonome |  | champion | ✅ |  | `94d8ed795e93…` |
 
 ## world-cup (38)
 

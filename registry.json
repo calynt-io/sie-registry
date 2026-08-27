@@ -2,10 +2,19 @@
   "_avertissement": "MIROIR PUBLIC généré automatiquement depuis Supabase (table model_registry). La production NE lit JAMAIS ce fichier : export_predictions_public.py interroge Supabase en direct (is_champion=true) à chaque exécution. Ce fichier est publié pour la transparence du lecteur. Régénérer : python3 generer_registry_public.py. key_role : 'historique' (préfixe -wc-, sous lequel vivent les prédictions) et 'canonique' (préfixe -intl-, identité post-renommage du 24/07/2026) sont des PAIRES appariées via la table models — les deux sont porteuses, aucune n'est un doublon supprimable ; 'autonome' = pas concerné par le renommage (clubs, PL). VERSION PUBLIQUE : champs label/notes retirés (aucun détail de paramétrage ni d'ablation exposé).",
   "source_of_truth": "Supabase.model_registry (is_champion=true, lu en direct par export_predictions_public.py)",
   "generated_from": "Supabase.model_registry",
-  "generated_at": "2026-08-10T16:44:27.968858+00:00",
+  "generated_at": "2026-08-27T11:05:41.922723+00:00",
   "public_filtered": true,
-  "model_count": 43,
+  "model_count": 48,
   "models": [
+    {
+      "model_key": "poisson-mle-club-brasileirao",
+      "competition_key": "brasileirao",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-08-27T10:27:28.848276+00:00",
+      "key_role": "autonome"
+    },
     {
       "model_key": "poisson-mle-club-bundesliga",
       "competition_key": "bundesliga",
@@ -17,6 +26,26 @@
       "hash": "7e0a68f22f58d2a98deb47f220a269a09170cdc30ff454b81115dde527bc75cd"
     },
     {
+      "model_key": "poisson-mle-club-championship",
+      "competition_key": "championship",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-08-26T18:40:44.398983+00:00",
+      "key_role": "autonome",
+      "hash": "d9eb1658a92243a718219adf2e01e163758f66fb535fedccd9b4385d3c89c36a"
+    },
+    {
+      "model_key": "poisson-mle-club-eredivisie",
+      "competition_key": "eredivisie",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-08-26T11:08:41.897605+00:00",
+      "key_role": "autonome",
+      "hash": "a935d6be8f9561f4b494dd7cce00ab15db5a2953e5b1503fea1d6b10e472a280"
+    },
+    {
       "model_key": "poisson-mle-club-la-liga",
       "competition_key": "la-liga",
       "status": "champion",
@@ -24,7 +53,7 @@
       "market": null,
       "registered_at": "2026-08-04T15:46:41.368094+00:00",
       "key_role": "autonome",
-      "hash": "20bb2beec4a060397da4e3402ea065260da2969fd3161a5e2af5a916eba318a5"
+      "hash": "36b629295a833495476ebbf49272e9d5351b19382af81a7a92ff83b9684d12c7"
     },
     {
       "model_key": "poisson-mle-club-ligue-1",
@@ -34,7 +63,7 @@
       "market": null,
       "registered_at": "2026-08-04T15:46:41.368094+00:00",
       "key_role": "autonome",
-      "hash": "b65bb11644f1b8f84732462be58fe9d1a4ec02df497e3dff839df800871499ae"
+      "hash": "621ae1b8e5f92be6706f9d812f5a79939a3c73da0f6fdd4bfe20cdfd3a602df0"
     },
     {
       "model_key": "elo-davidson-v1",
@@ -53,7 +82,27 @@
       "market": null,
       "registered_at": "2026-08-04T15:46:41.368094+00:00",
       "key_role": "autonome",
-      "hash": "e1b165ad5b568048cdb37b01f72665aa141fdc25e863c9c2c595f78d04e7d0ca"
+      "hash": "c2b71a4012c6bbc901a3331cb325a280a9e687307fa8e56742401f6d3a347a09"
+    },
+    {
+      "model_key": "poisson-mle-club-primeira-liga",
+      "competition_key": "primeira-liga",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-08-26T08:16:49.916362+00:00",
+      "key_role": "autonome",
+      "hash": "93a2eb1014cf6524b9685ed49ffcb60d93e040aae7d09d8861a4e7c047128721"
+    },
+    {
+      "model_key": "poisson-mle-club-serie-a",
+      "competition_key": "serie-a",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-08-25T20:23:00.836966+00:00",
+      "key_role": "autonome",
+      "hash": "94d8ed795e936e0806246a5ab2e12de362f94ef5517234812d2538c07f18c57a"
     },
     {
       "model_key": "elo-davidson-intl-ens",
