@@ -1,6 +1,6 @@
 # REGISTRY — Sports Intelligence Engine (miroir public)
 
-> ⚠️ **Miroir généré automatiquement depuis Supabase `model_registry` le 2026-08-27T11:05:41.922723+00:00.**
+> ⚠️ **Miroir généré automatiquement depuis Supabase `model_registry` le 2026-08-27T11:06:29.333812+00:00.**
 > La production **ne lit jamais ce fichier** — `export_predictions_public.py`
 > interroge la table Supabase **en direct** (`is_champion = true`). Ce document
 > est publié pour la **transparence du lecteur**, régénéré par `generer_registry_public.py`.
@@ -15,7 +15,7 @@
 
 | model_key | rôle clé | paire | statut | champion | marché | hash |
 |---|---|---|---|---|---|---|
-| `poisson-mle-club-brasileirao` | autonome |  | champion | ✅ |  |  |
+| `poisson-mle-club-brasileirao` | autonome |  | champion | ✅ |  | `d4a6afe9f153…` |
 
 ## bundesliga (1)
 
@@ -39,7 +39,7 @@
 
 | model_key | rôle clé | paire | statut | champion | marché | hash |
 |---|---|---|---|---|---|---|
-| `poisson-mle-club-la-liga` | autonome |  | champion | ✅ |  | `36b629295a83…` |
+| `poisson-mle-club-la-liga` | autonome |  | champion | ✅ |  | `430ed6efb722…` |
 
 ## ligue-1 (1)
 

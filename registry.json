@@ -2,7 +2,7 @@
   "_avertissement": "MIROIR PUBLIC généré automatiquement depuis Supabase (table model_registry). La production NE lit JAMAIS ce fichier : export_predictions_public.py interroge Supabase en direct (is_champion=true) à chaque exécution. Ce fichier est publié pour la transparence du lecteur. Régénérer : python3 generer_registry_public.py. key_role : 'historique' (préfixe -wc-, sous lequel vivent les prédictions) et 'canonique' (préfixe -intl-, identité post-renommage du 24/07/2026) sont des PAIRES appariées via la table models — les deux sont porteuses, aucune n'est un doublon supprimable ; 'autonome' = pas concerné par le renommage (clubs, PL). VERSION PUBLIQUE : champs label/notes retirés (aucun détail de paramétrage ni d'ablation exposé).",
   "source_of_truth": "Supabase.model_registry (is_champion=true, lu en direct par export_predictions_public.py)",
   "generated_from": "Supabase.model_registry",
-  "generated_at": "2026-08-27T11:05:41.922723+00:00",
+  "generated_at": "2026-08-27T11:06:29.333812+00:00",
   "public_filtered": true,
   "model_count": 48,
   "models": [
@@ -13,7 +13,8 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-08-27T10:27:28.848276+00:00",
-      "key_role": "autonome"
+      "key_role": "autonome",
+      "hash": "d4a6afe9f153218c667b2de786e56abc4b76cb14db067d3a1c71bb6b91d70328"
     },
     {
       "model_key": "poisson-mle-club-bundesliga",
@@ -53,7 +54,7 @@
       "market": null,
       "registered_at": "2026-08-04T15:46:41.368094+00:00",
       "key_role": "autonome",
-      "hash": "36b629295a833495476ebbf49272e9d5351b19382af81a7a92ff83b9684d12c7"
+      "hash": "430ed6efb72262444cfee855ab79fb54ee765db62076a00884e44eca4c6ef2f1"
     },
     {
       "model_key": "poisson-mle-club-ligue-1",
