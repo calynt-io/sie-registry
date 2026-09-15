@@ -1,13 +1,13 @@
 # REGISTRY — Sports Intelligence Engine (miroir public)
 
-> ⚠️ **Miroir généré automatiquement depuis Supabase `model_registry` le 2026-08-27T11:06:29.333812+00:00.**
+> ⚠️ **Miroir généré automatiquement depuis Supabase `model_registry` le 2026-09-15T03:29:54.725952+00:00.**
 > La production **ne lit jamais ce fichier** — `export_predictions_public.py`
 > interroge la table Supabase **en direct** (`is_champion = true`). Ce document
 > est publié pour la **transparence du lecteur**, régénéré par `generer_registry_public.py`.
 >
 > 🔒 **Version publique** : les champs `label`/`notes` (détail de paramétrage, ablations) sont volontairement retirés.
 
-**Total : 48 modèles enregistrés** — 10 champion(s) désigné(s), 38 challenger(s).
+**Total : 49 modèles enregistrés** — 11 champion(s) désigné(s), 38 challenger(s).
 
 > ℹ️ **Renommage CdM→International (24/07/2026).** 19 clés `historique` (préfixe `-wc-`, sous lesquelles vivent les prédictions en base) sont appariées 1-pour-1 à 19 clés `canonique` (préfixe `-intl-`, identité post-renommage) via la table `models`. **Les deux sont porteuses** — aucune n'est un doublon supprimable. `autonome` = hors renommage (clubs, PL).
 
@@ -22,6 +22,12 @@
 | model_key | rôle clé | paire | statut | champion | marché | hash |
 |---|---|---|---|---|---|---|
 | `poisson-mle-club-bundesliga` | autonome |  | champion | ✅ |  | `7e0a68f22f58…` |
+
+## champions-league (1)
+
+| model_key | rôle clé | paire | statut | champion | marché | hash |
+|---|---|---|---|---|---|---|
+| `poisson-mle-club-champions-league` | autonome |  | champion | ✅ |  |  |
 
 ## championship (1)
 
