@@ -46,3 +46,4 @@
 2026-10-25  sie-predictions@df6ba0f0c174f7e5fbe6a8e2b2ae5697b0eb0b21
 2026-10-26  sie-predictions@df6ba0f0c174f7e5fbe6a8e2b2ae5697b0eb0b21
 2026-10-27  sie-predictions@df6ba0f0c174f7e5fbe6a8e2b2ae5697b0eb0b21
+2026-10-28  sie-predictions@df6ba0f0c174f7e5fbe6a8e2b2ae5697b0eb0b21
