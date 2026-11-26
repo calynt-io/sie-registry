@@ -2,10 +2,487 @@
   "_avertissement": "MIROIR PUBLIC généré automatiquement depuis Supabase (table model_registry). La production NE lit JAMAIS ce fichier : export_predictions_public.py interroge Supabase en direct (is_champion=true) à chaque exécution. Ce fichier est publié pour la transparence du lecteur. Régénérer : python3 generer_registry_public.py. key_role : 'historique' (préfixe -wc-, sous lequel vivent les prédictions) et 'canonique' (préfixe -intl-, identité post-renommage du 24/07/2026) sont des PAIRES appariées via la table models — les deux sont porteuses, aucune n'est un doublon supprimable ; 'autonome' = pas concerné par le renommage (clubs, PL). VERSION PUBLIQUE : champs label/notes retirés (aucun détail de paramétrage ni d'ablation exposé).",
   "source_of_truth": "Supabase.model_registry (is_champion=true, lu en direct par export_predictions_public.py)",
   "generated_from": "Supabase.model_registry",
-  "generated_at": "2026-09-15T03:29:54.725952+00:00",
+  "generated_at": "2026-11-26T19:12:07.997881+00:00",
   "public_filtered": true,
-  "model_count": 49,
+  "model_count": 367,
   "models": [
+    {
+      "model_key": "recette-generique-v1-1-liga",
+      "competition_key": "1-liga",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-14T23:04:02.989997+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-1-liga-classic-group-3",
+      "competition_key": "1-liga-classic-group-3",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-14T20:59:05.434671+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-1-lyga",
+      "competition_key": "1-lyga",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-13T20:42:04.641549+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-1-snl",
+      "competition_key": "1-snl",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-20T13:26:27.082462+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-1-snl",
+      "competition_key": "1-snl",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-1a-divisio",
+      "competition_key": "1a-divisio",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-13T20:38:41.502249+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-2-division-group-1",
+      "competition_key": "2-division-group-1",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-14T19:07:08.837252+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-2-division-group-2",
+      "competition_key": "2-division-group-2",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-20T13:26:27.082462+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-2-division-group-2",
+      "competition_key": "2-division-group-2",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-2-lig",
+      "competition_key": "2-lig",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-16T01:06:50.396828+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-2-snl",
+      "competition_key": "2-snl",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-20T13:26:27.082462+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-2-snl",
+      "competition_key": "2-snl",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-3-lig-group-1",
+      "competition_key": "3-lig-group-1",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T18:06:40.43753+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-3-lig-group-1",
+      "competition_key": "3-lig-group-1",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-3-lig-group-2",
+      "competition_key": "3-lig-group-2",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-02T09:18:30.920953+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-3-liga",
+      "competition_key": "3-liga",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-13T20:48:58.735421+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-3-liga-msfl",
+      "competition_key": "3-liga-msfl",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-14T20:40:20.939198+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-4-liga-divizie-b",
+      "competition_key": "4-liga-divizie-b",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-14T20:59:05.434671+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-4-liga-divizie-e",
+      "competition_key": "4-liga-divizie-e",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-14T20:59:05.434671+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-a-league-women",
+      "competition_key": "a-league-women",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-02T07:53:22.695109+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-a-lyga",
+      "competition_key": "a-lyga",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-03T19:40:04.07561+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "poisson-mle-coupes-v1-afc-champions-league-elite",
+      "competition_key": "afc-champions-league-elite",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-23T08:35:31.120894+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "selections-elo-poisson-v1-africa-cup-of-nations-qualification",
+      "competition_key": "africa-cup-of-nations-qualification",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-15T21:15:17.08285+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-afrique-du-sud-1st-division",
+      "competition_key": "afrique-du-sud-1st-division",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-20T13:26:27.082462+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-afrique-du-sud-1st-division",
+      "competition_key": "afrique-du-sud-1st-division",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-albanie-1st-division",
+      "competition_key": "albanie-1st-division",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-13T00:06:33.872188+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-albanie-superliga",
+      "competition_key": "albanie-superliga",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-albanie-superliga",
+      "competition_key": "albanie-superliga",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-algerie-ligue-1",
+      "competition_key": "algerie-ligue-1",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-algerie-ligue-1",
+      "competition_key": "algerie-ligue-1",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-algerie-ligue-2",
+      "competition_key": "algerie-ligue-2",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-02T10:23:00.752082+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-allemagne-regionalliga-west",
+      "competition_key": "allemagne-regionalliga-west",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-11T17:38:35.534041+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-allsvenskan",
+      "competition_key": "allsvenskan",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-allsvenskan",
+      "competition_key": "allsvenskan",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "poisson-mle-coupes-v1-angleterre-fa-cup",
+      "competition_key": "angleterre-fa-cup",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-23T08:35:31.120894+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "poisson-mle-coupes-v1-angleterre-league-cup",
+      "competition_key": "angleterre-league-cup",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-23T08:35:31.120894+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-angleterre-national-league",
+      "competition_key": "angleterre-national-league",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T18:06:40.43753+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-angleterre-national-league",
+      "competition_key": "angleterre-national-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-arabie-saoudite-division-1",
+      "competition_key": "arabie-saoudite-division-1",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-20T13:26:27.082462+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-arabie-saoudite-division-1",
+      "competition_key": "arabie-saoudite-division-1",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-arabie-saoudite-pro-league",
+      "competition_key": "arabie-saoudite-pro-league",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T18:06:40.43753+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-arabie-saoudite-pro-league",
+      "competition_key": "arabie-saoudite-pro-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-armenie-first-league",
+      "competition_key": "armenie-first-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-15T12:07:22.374305+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-autriche-2-liga",
+      "competition_key": "autriche-2-liga",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-02T09:19:37.054009+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-autriche-bundesliga",
+      "competition_key": "autriche-bundesliga",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-autriche-bundesliga",
+      "competition_key": "autriche-bundesliga",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-autriche-regionalliga-west",
+      "competition_key": "autriche-regionalliga-west",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-20T13:56:08.905375+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-autriche-regionalliga-west",
+      "competition_key": "autriche-regionalliga-west",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-bielorussie-1-division",
+      "competition_key": "bielorussie-1-division",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-bielorussie-1-division",
+      "competition_key": "bielorussie-1-division",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-bielorussie-premier-league",
+      "competition_key": "bielorussie-premier-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-12T17:44:49.190946+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-botola-pro",
+      "competition_key": "botola-pro",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-20T13:26:27.082462+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-botola-pro",
+      "competition_key": "botola-pro",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
     {
       "model_key": "poisson-mle-club-brasileirao",
       "competition_key": "brasileirao",
@@ -17,6 +494,78 @@
       "hash": "d4a6afe9f153218c667b2de786e56abc4b76cb14db067d3a1c71bb6b91d70328"
     },
     {
+      "model_key": "projection-classement-forme-v1-brasileirao",
+      "competition_key": "brasileirao",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-12T13:55:06.66427+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-brasileirao",
+      "competition_key": "brasileirao",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-23T08:58:16.910994+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-brasileiro-women",
+      "competition_key": "brasileiro-women",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-21T16:57:01.129481+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-brasileiro-women",
+      "competition_key": "brasileiro-women",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-bulgarie-first-league",
+      "competition_key": "bulgarie-first-league",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-20T13:26:27.082462+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-bulgarie-first-league",
+      "competition_key": "bulgarie-first-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-bulgarie-second-league",
+      "competition_key": "bulgarie-second-league",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T18:06:40.43753+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-bulgarie-second-league",
+      "competition_key": "bulgarie-second-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
       "model_key": "poisson-mle-club-bundesliga",
       "competition_key": "bundesliga",
       "status": "champion",
@@ -25,6 +574,69 @@
       "registered_at": "2026-08-04T15:46:41.368094+00:00",
       "key_role": "autonome",
       "hash": "7e0a68f22f58d2a98deb47f220a269a09170cdc30ff454b81115dde527bc75cd"
+    },
+    {
+      "model_key": "projection-classement-forme-v1-bundesliga",
+      "competition_key": "bundesliga",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-12T13:55:06.66427+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "projection-classement-recette-v1-bundesliga-2",
+      "competition_key": "bundesliga-2",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T17:17:19.734146+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-bundesliga-2",
+      "competition_key": "bundesliga-2",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T17:07:21.443496+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-bundesliga-2",
+      "competition_key": "bundesliga-2",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-campionato",
+      "competition_key": "campionato",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-20T13:55:37.913708+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-campionato",
+      "competition_key": "campionato",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-challenger-pro-league",
+      "competition_key": "challenger-pro-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-12T17:44:49.190946+00:00",
+      "key_role": "autonome"
     },
     {
       "model_key": "poisson-mle-club-champions-league",
@@ -46,6 +658,456 @@
       "hash": "d9eb1658a92243a718219adf2e01e163758f66fb535fedccd9b4385d3c89c36a"
     },
     {
+      "model_key": "projection-classement-forme-v1-championship",
+      "competition_key": "championship",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-12T13:55:06.66427+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-championship",
+      "competition_key": "championship",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-23T08:58:16.910994+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-chili-primera-b",
+      "competition_key": "chili-primera-b",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-13T20:48:58.735421+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-chili-primera-division",
+      "competition_key": "chili-primera-division",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-12T17:44:49.190946+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-chine-league-one",
+      "competition_key": "chine-league-one",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-19T17:52:29.010271+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-chine-league-one",
+      "competition_key": "chine-league-one",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-chine-super-league",
+      "competition_key": "chine-super-league",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T19:48:23.087248+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-chine-super-league",
+      "competition_key": "chine-super-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-chypre-1-division",
+      "competition_key": "chypre-1-division",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-19T17:52:29.010271+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-chypre-1-division",
+      "competition_key": "chypre-1-division",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-chypre-2-division",
+      "competition_key": "chypre-2-division",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-21T16:57:01.129481+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-chypre-2-division",
+      "competition_key": "chypre-2-division",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-colombie-primera-a",
+      "competition_key": "colombie-primera-a",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-02T09:01:48.63368+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-colombie-primera-b",
+      "competition_key": "colombie-primera-b",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-13T20:42:04.641549+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "selections-elo-poisson-v1-concacaf-nations-league",
+      "competition_key": "concacaf-nations-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-15T21:15:17.08285+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "poisson-mle-coupes-v1-conference-league",
+      "competition_key": "conference-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-06T11:26:39.127929+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "poisson-mle-coupes-v1-copa-do-brasil",
+      "competition_key": "copa-do-brasil",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-23T08:35:31.120894+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "poisson-mle-coupes-v1-coppa-italia",
+      "competition_key": "coppa-italia",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-23T08:35:31.120894+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-costa-rica-primera-division",
+      "competition_key": "costa-rica-primera-division",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-costa-rica-primera-division",
+      "competition_key": "costa-rica-primera-division",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-croatie-hnl",
+      "competition_key": "croatie-hnl",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-croatie-hnl",
+      "competition_key": "croatie-hnl",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-czech-liga",
+      "competition_key": "czech-liga",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-19T17:52:29.010271+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-czech-liga",
+      "competition_key": "czech-liga",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-danemark-1-division",
+      "competition_key": "danemark-1-division",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-danemark-1-division",
+      "competition_key": "danemark-1-division",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-danemark-superliga",
+      "competition_key": "danemark-superliga",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T17:07:21.443496+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-danemark-superliga",
+      "competition_key": "danemark-superliga",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-division-intermedia",
+      "competition_key": "division-intermedia",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-13T23:21:01.513621+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-division-profesional-apertura",
+      "competition_key": "division-profesional-apertura",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-14T21:59:39.744955+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-division-profesional-clausura",
+      "competition_key": "division-profesional-clausura",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-02T16:51:21.179901+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "projection-classement-recette-v1-ecosse-championship",
+      "competition_key": "ecosse-championship",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T17:17:19.734146+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-ecosse-championship",
+      "competition_key": "ecosse-championship",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T17:07:21.443496+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-ecosse-championship",
+      "competition_key": "ecosse-championship",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "projection-classement-recette-v1-ecosse-league-one",
+      "competition_key": "ecosse-league-one",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T17:17:19.734146+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-ecosse-league-one",
+      "competition_key": "ecosse-league-one",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T17:07:21.443496+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-ecosse-league-one",
+      "competition_key": "ecosse-league-one",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "projection-classement-recette-v1-ecosse-league-two",
+      "competition_key": "ecosse-league-two",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T17:17:19.734146+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-ecosse-league-two",
+      "competition_key": "ecosse-league-two",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T17:07:21.443496+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-ecosse-league-two",
+      "competition_key": "ecosse-league-two",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-ecosse-premiership",
+      "competition_key": "ecosse-premiership",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T17:07:21.443496+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-ecosse-premiership",
+      "competition_key": "ecosse-premiership",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-eerste-divisie",
+      "competition_key": "eerste-divisie",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T18:06:40.43753+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-eerste-divisie",
+      "competition_key": "eerste-divisie",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-ekstraklasa",
+      "competition_key": "ekstraklasa",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-19T17:52:29.010271+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-ekstraklasa",
+      "competition_key": "ekstraklasa",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-elite-one",
+      "competition_key": "elite-one",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-14T23:04:02.989997+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "projection-classement-recette-v1-eliteserien",
+      "competition_key": "eliteserien",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T17:17:19.734146+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-eliteserien",
+      "competition_key": "eliteserien",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T17:07:21.443496+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-eliteserien",
+      "competition_key": "eliteserien",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
       "model_key": "poisson-mle-club-eredivisie",
       "competition_key": "eredivisie",
       "status": "champion",
@@ -54,6 +1116,501 @@
       "registered_at": "2026-08-26T11:08:41.897605+00:00",
       "key_role": "autonome",
       "hash": "a935d6be8f9561f4b494dd7cce00ab15db5a2953e5b1503fea1d6b10e472a280"
+    },
+    {
+      "model_key": "projection-classement-forme-v1-eredivisie",
+      "competition_key": "eredivisie",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-12T13:55:06.66427+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-eredivisie-women",
+      "competition_key": "eredivisie-women",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-02T07:53:22.695109+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-erovnuli-liga",
+      "competition_key": "erovnuli-liga",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T19:48:23.087248+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-erovnuli-liga",
+      "competition_key": "erovnuli-liga",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-erovnuli-liga-2",
+      "competition_key": "erovnuli-liga-2",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T19:48:23.087248+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-erovnuli-liga-2",
+      "competition_key": "erovnuli-liga-2",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-ettan-norra",
+      "competition_key": "ettan-norra",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T19:48:23.087248+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-ettan-norra",
+      "competition_key": "ettan-norra",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-ettan-sodra",
+      "competition_key": "ettan-sodra",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-02T09:19:37.054009+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "poisson-mle-coupes-v1-europa-league",
+      "competition_key": "europa-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-23T08:35:31.120894+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-fa-wsl",
+      "competition_key": "fa-wsl",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-20T13:56:08.905375+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-fa-wsl",
+      "competition_key": "fa-wsl",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-feminine-division-1",
+      "competition_key": "feminine-division-1",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-20T13:56:08.905375+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-feminine-division-1",
+      "competition_key": "feminine-division-1",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-first-nl",
+      "competition_key": "first-nl",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-first-nl",
+      "competition_key": "first-nl",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-fnl",
+      "competition_key": "fnl",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-20T13:26:27.082462+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-fnl",
+      "competition_key": "fnl",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-frauen-bundesliga",
+      "competition_key": "frauen-bundesliga",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-21T16:57:01.129481+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-frauen-bundesliga",
+      "competition_key": "frauen-bundesliga",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-ghana-premier-league",
+      "competition_key": "ghana-premier-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-13T20:48:58.735421+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-girabola",
+      "competition_key": "girabola",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-14T23:04:02.989997+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-grece-super-league-1",
+      "competition_key": "grece-super-league-1",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-03T19:40:04.07561+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-guatemala-liga-nacional",
+      "competition_key": "guatemala-liga-nacional",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-02T09:01:48.63368+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-i-liga",
+      "competition_key": "i-liga",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-19T17:52:29.010271+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-i-liga",
+      "competition_key": "i-liga",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-ii-liga-east",
+      "competition_key": "ii-liga-east",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-13T23:21:01.513621+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-indonesie-liga-1",
+      "competition_key": "indonesie-liga-1",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-14T20:40:20.939198+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-irlande-du-nord-championship",
+      "competition_key": "irlande-du-nord-championship",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-14T20:40:20.939198+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-irlande-du-nord-premiership",
+      "competition_key": "irlande-du-nord-premiership",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T17:07:21.443496+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-irlande-du-nord-premiership",
+      "competition_key": "irlande-du-nord-premiership",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-irlande-premier-division",
+      "competition_key": "irlande-premier-division",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-20T13:26:27.082462+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-irlande-premier-division",
+      "competition_key": "irlande-premier-division",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "projection-classement-recette-v1-j1-league",
+      "competition_key": "j1-league",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T17:17:19.734146+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-j1-league",
+      "competition_key": "j1-league",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T17:07:21.443496+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-j1-league",
+      "competition_key": "j1-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "projection-classement-recette-v1-j2-league",
+      "competition_key": "j2-league",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T17:17:19.734146+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-j2-league",
+      "competition_key": "j2-league",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T17:07:21.443496+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-j2-league",
+      "competition_key": "j2-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-j3-league",
+      "competition_key": "j3-league",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-19T17:52:29.010271+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-j3-league",
+      "competition_key": "j3-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-jamaique-premier-league",
+      "competition_key": "jamaique-premier-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-13T20:38:41.502249+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-jupiler-pro-league",
+      "competition_key": "jupiler-pro-league",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T17:07:21.443496+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-jupiler-pro-league",
+      "competition_key": "jupiler-pro-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-k-league-1",
+      "competition_key": "k-league-1",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-19T17:52:29.010271+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-k-league-1",
+      "competition_key": "k-league-1",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-k-league-2",
+      "competition_key": "k-league-2",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-02T10:23:00.752082+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-k3-league",
+      "competition_key": "k3-league",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-20T13:56:29.050696+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-k3-league",
+      "competition_key": "k3-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-kakkonen-lohko-a",
+      "competition_key": "kakkonen-lohko-a",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-15T11:04:07.751505+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-kakkonen-lohko-b",
+      "competition_key": "kakkonen-lohko-b",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-15T11:04:07.751505+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-kakkonen-lohko-c",
+      "competition_key": "kakkonen-lohko-c",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-15T11:04:07.751505+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-kazakhstan-premier-league",
+      "competition_key": "kazakhstan-premier-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-12T17:44:49.190946+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-koweit-premier-league",
+      "competition_key": "koweit-premier-league",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-koweit-premier-league",
+      "competition_key": "koweit-premier-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
     },
     {
       "model_key": "poisson-mle-club-la-liga",
@@ -66,6 +1623,204 @@
       "hash": "430ed6efb72262444cfee855ab79fb54ee765db62076a00884e44eca4c6ef2f1"
     },
     {
+      "model_key": "projection-classement-forme-v1-la-liga",
+      "competition_key": "la-liga",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-12T13:55:06.66427+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-la-liga",
+      "competition_key": "la-liga",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-23T08:58:16.910994+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "poisson-mle-club-league-one",
+      "competition_key": "league-one",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-06T18:32:21.084945+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "projection-classement-recette-v1-league-two",
+      "competition_key": "league-two",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T17:17:19.734146+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-league-two",
+      "competition_key": "league-two",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T17:07:21.443496+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-league-two",
+      "competition_key": "league-two",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-liga-de-expansion-mx",
+      "competition_key": "liga-de-expansion-mx",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T19:48:23.087248+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-liga-de-expansion-mx",
+      "competition_key": "liga-de-expansion-mx",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-liga-ii",
+      "competition_key": "liga-ii",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-13T00:06:33.872188+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-liga-leumit",
+      "competition_key": "liga-leumit",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-13T00:06:33.872188+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-liga-mx",
+      "competition_key": "liga-mx",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-liga-mx",
+      "competition_key": "liga-mx",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-liga-panamena-de-futbol",
+      "competition_key": "liga-panamena-de-futbol",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-13T20:48:58.735421+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-liga-portugal-2",
+      "competition_key": "liga-portugal-2",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T18:06:40.43753+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-liga-portugal-2",
+      "competition_key": "liga-portugal-2",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-liga-pro",
+      "competition_key": "liga-pro",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-liga-pro",
+      "competition_key": "liga-pro",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-liga-profesional-argentina",
+      "competition_key": "liga-profesional-argentina",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-02T09:01:48.63368+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-ligat-haal",
+      "competition_key": "ligat-haal",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-ligat-haal",
+      "competition_key": "ligat-haal",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-ligi-kuu-bara",
+      "competition_key": "ligi-kuu-bara",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-20T13:56:08.905375+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-ligi-kuu-bara",
+      "competition_key": "ligi-kuu-bara",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
       "model_key": "poisson-mle-club-ligue-1",
       "competition_key": "ligue-1",
       "status": "champion",
@@ -76,9 +1831,378 @@
       "hash": "621ae1b8e5f92be6706f9d812f5a79939a3c73da0f6fdd4bfe20cdfd3a602df0"
     },
     {
+      "model_key": "projection-classement-forme-v1-ligue-1",
+      "competition_key": "ligue-1",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-12T13:55:06.66427+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-ligue-2",
+      "competition_key": "ligue-2",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T18:06:40.43753+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-ligue-2",
+      "competition_key": "ligue-2",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-macedoine-du-nord-first-league",
+      "competition_key": "macedoine-du-nord-first-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-02T09:01:48.63368+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-macedoine-du-nord-second-league",
+      "competition_key": "macedoine-du-nord-second-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-14T20:59:05.434671+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-major-league-soccer",
+      "competition_key": "major-league-soccer",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-19T17:21:28.709109+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-major-league-soccer",
+      "competition_key": "major-league-soccer",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-malaisie-super-league",
+      "competition_key": "malaisie-super-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-13T20:40:24.091586+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-malte-challenge-league",
+      "competition_key": "malte-challenge-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-14T20:40:20.939198+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-malte-premier-league",
+      "competition_key": "malte-premier-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-14T22:31:46.260481+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-meistaradeildin",
+      "competition_key": "meistaradeildin",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-13T15:04:13.297098+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-meistriliiga",
+      "competition_key": "meistriliiga",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-12T17:44:49.190946+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-montenegro-first-league",
+      "competition_key": "montenegro-first-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-20T13:26:27.082462+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-montenegro-first-league",
+      "competition_key": "montenegro-first-league",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-montenegro-second-league",
+      "competition_key": "montenegro-second-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-02T10:23:00.752082+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-national-2-group-a",
+      "competition_key": "national-2-group-a",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-22T19:27:13.568338+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-national-2-group-b",
+      "competition_key": "national-2-group-b",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-22T19:27:44.496877+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-national-2-group-c",
+      "competition_key": "national-2-group-c",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-14T21:59:39.744955+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-national-division",
+      "competition_key": "national-division",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-national-division",
+      "competition_key": "national-division",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-national-league-north",
+      "competition_key": "national-league-north",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-13T23:21:01.513621+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-national-league-south",
+      "competition_key": "national-league-south",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-13T23:21:01.513621+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-nb-i",
+      "competition_key": "nb-i",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-nb-i",
+      "competition_key": "nb-i",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-nb-ii",
+      "competition_key": "nb-ii",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-12T17:44:49.190946+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-nb-iii-northeast",
+      "competition_key": "nb-iii-northeast",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-14T20:40:20.939198+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-nb-iii-southwest",
+      "competition_key": "nb-iii-southwest",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-15T10:36:52.858992+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-non-league-premier-isthmian",
+      "competition_key": "non-league-premier-isthmian",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-13T23:24:26.834708+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-non-league-premier-northern",
+      "competition_key": "non-league-premier-northern",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-16T07:15:54.641191+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-norvege-1-division",
+      "competition_key": "norvege-1-division",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-norvege-1-division",
+      "competition_key": "norvege-1-division",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-npfl",
+      "competition_key": "npfl",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-14T19:08:27.611862+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-nwsl-women",
+      "competition_key": "nwsl-women",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-13T20:48:58.735421+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-oberliga-hamburg",
+      "competition_key": "oberliga-hamburg",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-14T21:59:39.744955+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-ouganda-premier-league",
+      "competition_key": "ouganda-premier-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-15T10:36:52.858992+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-ouzbekistan-super-league",
+      "competition_key": "ouzbekistan-super-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-13T20:40:24.091586+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-pays-de-galles-premier-league",
+      "competition_key": "pays-de-galles-premier-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-02T10:23:00.752082+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-perou-segunda-division",
+      "competition_key": "perou-segunda-division",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-20T13:26:27.082462+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-perou-segunda-division",
+      "competition_key": "perou-segunda-division",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-persian-gulf-pro-league",
+      "competition_key": "persian-gulf-pro-league",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T19:48:23.087248+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-persian-gulf-pro-league",
+      "competition_key": "persian-gulf-pro-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
       "model_key": "elo-davidson-v1",
       "competition_key": "premier-league",
-      "status": "challenger",
+      "status": "retired",
       "is_champion": false,
       "market": "1X2",
       "registered_at": "2026-06-27T20:44:30.658669+00:00",
@@ -95,6 +2219,60 @@
       "hash": "c2b71a4012c6bbc901a3331cb325a280a9e687307fa8e56742401f6d3a347a09"
     },
     {
+      "model_key": "projection-classement-forme-v1-premier-league",
+      "competition_key": "premier-league",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-12T13:55:06.66427+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-premier-league",
+      "competition_key": "premier-league",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-23T08:58:16.910994+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-premier-soccer-league",
+      "competition_key": "premier-soccer-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-02T09:01:48.63368+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-premijer-liga",
+      "competition_key": "premijer-liga",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-premijer-liga",
+      "competition_key": "premijer-liga",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-premyer-liqa",
+      "competition_key": "premyer-liqa",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-12T17:44:49.190946+00:00",
+      "key_role": "autonome"
+    },
+    {
       "model_key": "poisson-mle-club-primeira-liga",
       "competition_key": "primeira-liga",
       "status": "champion",
@@ -105,6 +2283,204 @@
       "hash": "93a2eb1014cf6524b9685ed49ffcb60d93e040aae7d09d8861a4e7c047128721"
     },
     {
+      "model_key": "projection-classement-forme-v1-primeira-liga",
+      "competition_key": "primeira-liga",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-12T13:55:06.66427+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-primera-b-metropolitana",
+      "competition_key": "primera-b-metropolitana",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-14T19:08:27.611862+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-primera-c",
+      "competition_key": "primera-c",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-14T23:04:02.989997+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-primera-division-clausura",
+      "competition_key": "primera-division-clausura",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-14T23:04:02.989997+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-primera-division-femenina",
+      "competition_key": "primera-division-femenina",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-20T13:26:27.082462+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-primera-division-femenina",
+      "competition_key": "primera-division-femenina",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-primera-division-rfef-group-1",
+      "competition_key": "primera-division-rfef-group-1",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-02T09:18:30.920953+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-primera-division-rfef-group-2",
+      "competition_key": "primera-division-rfef-group-2",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-14T22:31:46.260481+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-primera-nacional",
+      "competition_key": "primera-nacional",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-02T10:23:00.752082+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-prva-liga",
+      "competition_key": "prva-liga",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-02T16:51:21.179901+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-regionalliga-nordost",
+      "competition_key": "regionalliga-nordost",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-14T20:59:05.434671+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-regionalliga-ost",
+      "competition_key": "regionalliga-ost",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-14T23:04:02.989997+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-regionalliga-sudwest",
+      "competition_key": "regionalliga-sudwest",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-02T09:18:30.920953+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-roumanie-liga-i",
+      "competition_key": "roumanie-liga-i",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-02T10:23:00.752082+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-russie-first-league",
+      "competition_key": "russie-first-league",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-russie-first-league",
+      "competition_key": "russie-first-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-russie-premier-league",
+      "competition_key": "russie-premier-league",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-russie-premier-league",
+      "competition_key": "russie-premier-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-segunda-division",
+      "competition_key": "segunda-division",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T18:06:40.43753+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-segunda-division",
+      "competition_key": "segunda-division",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-segunda-division-rfef-group-5",
+      "competition_key": "segunda-division-rfef-group-5",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-14T23:04:02.989997+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-serbie-super-liga",
+      "competition_key": "serbie-super-liga",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-02T10:23:00.752082+00:00",
+      "key_role": "autonome"
+    },
+    {
       "model_key": "poisson-mle-club-serie-a",
       "competition_key": "serie-a",
       "status": "champion",
@@ -113,6 +2489,483 @@
       "registered_at": "2026-08-25T20:23:00.836966+00:00",
       "key_role": "autonome",
       "hash": "94d8ed795e936e0806246a5ab2e12de362f94ef5517234812d2538c07f18c57a"
+    },
+    {
+      "model_key": "projection-classement-forme-v1-serie-a",
+      "competition_key": "serie-a",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-12T13:55:06.66427+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-serie-a-women",
+      "competition_key": "serie-a-women",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-20T13:20:03.440734+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-serie-a-women",
+      "competition_key": "serie-a-women",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-serie-b",
+      "competition_key": "serie-b",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T18:06:40.43753+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-serie-b",
+      "competition_key": "serie-b",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-serie-c",
+      "competition_key": "serie-c",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-14T21:59:39.744955+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-serie-c-girone-a",
+      "competition_key": "serie-c-girone-a",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-14T21:59:39.744955+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-serie-c-girone-b",
+      "competition_key": "serie-c-girone-b",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-02T10:23:00.752082+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-serie-c-girone-c",
+      "competition_key": "serie-c-girone-c",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-02T09:18:30.920953+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-singapour-premier-league",
+      "competition_key": "singapour-premier-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-13T15:04:13.297098+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-slovaquie-2-liga",
+      "competition_key": "slovaquie-2-liga",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-14T22:31:46.260481+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-slovaquie-super-liga",
+      "competition_key": "slovaquie-super-liga",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-20T13:26:27.082462+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-slovaquie-super-liga",
+      "competition_key": "slovaquie-super-liga",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-stars-league",
+      "competition_key": "stars-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-13T20:38:41.502249+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-suisse-challenge-league",
+      "competition_key": "suisse-challenge-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-18T19:48:23.087248+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-suisse-challenge-league",
+      "competition_key": "suisse-challenge-league",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "projection-classement-recette-v1-suisse-super-league",
+      "competition_key": "suisse-super-league",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T17:17:19.734146+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-suisse-super-league",
+      "competition_key": "suisse-super-league",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T17:07:21.443496+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-suisse-super-league",
+      "competition_key": "suisse-super-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-super-lig",
+      "competition_key": "super-lig",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T18:06:40.43753+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-super-lig",
+      "competition_key": "super-lig",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-superettan",
+      "competition_key": "superettan",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-19T17:52:29.010271+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-superettan",
+      "competition_key": "superettan",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-tercera-division-rfef-group-14",
+      "competition_key": "tercera-division-rfef-group-14",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-02T09:18:30.920953+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-tercera-division-rfef-group-15",
+      "competition_key": "tercera-division-rfef-group-15",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-02T09:18:30.920953+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-tercera-division-rfef-group-16",
+      "competition_key": "tercera-division-rfef-group-16",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-02T09:18:30.920953+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-tercera-division-rfef-group-18",
+      "competition_key": "tercera-division-rfef-group-18",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-13T20:42:04.641549+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-tercera-division-rfef-group-2",
+      "competition_key": "tercera-division-rfef-group-2",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-02T09:18:30.920953+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-tercera-division-rfef-group-3",
+      "competition_key": "tercera-division-rfef-group-3",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-02T16:51:21.179901+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-tercera-division-rfef-group-5",
+      "competition_key": "tercera-division-rfef-group-5",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-14T22:31:46.260481+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-tercera-division-rfef-group-6",
+      "competition_key": "tercera-division-rfef-group-6",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-02T09:18:30.920953+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-tercera-division-rfef-group-7",
+      "competition_key": "tercera-division-rfef-group-7",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-02T16:51:21.179901+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-tercera-division-rfef-group-8",
+      "competition_key": "tercera-division-rfef-group-8",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-02T09:18:30.920953+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-thai-league-1",
+      "competition_key": "thai-league-1",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T18:06:40.43753+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-thai-league-1",
+      "competition_key": "thai-league-1",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-thai-league-2",
+      "competition_key": "thai-league-2",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-14T20:40:20.939198+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-tunisie-ligue-1",
+      "competition_key": "tunisie-ligue-1",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-tunisie-ligue-1",
+      "competition_key": "tunisie-ligue-1",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-turquie-1-lig",
+      "competition_key": "turquie-1-lig",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-02T09:01:48.63368+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-tweede-divisie",
+      "competition_key": "tweede-divisie",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-20T13:55:37.913708+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-tweede-divisie",
+      "competition_key": "tweede-divisie",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "selections-elo-poisson-v1-uefa-nations-league",
+      "competition_key": "uefa-nations-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-15T21:15:17.08285+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-ukraine-premier-league",
+      "competition_key": "ukraine-premier-league",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-20T17:29:10.301904+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-ukraine-premier-league",
+      "competition_key": "ukraine-premier-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-uruguay-segunda-division",
+      "competition_key": "uruguay-segunda-division",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-20T13:26:27.082462+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-uruguay-segunda-division",
+      "competition_key": "uruguay-segunda-division",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-urvalsdeild",
+      "competition_key": "urvalsdeild",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T19:48:23.087248+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-urvalsdeild",
+      "competition_key": "urvalsdeild",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-usl-league-one",
+      "competition_key": "usl-league-one",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-13T20:40:24.091586+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-veikkausliiga",
+      "competition_key": "veikkausliiga",
+      "status": "challenger",
+      "is_champion": false,
+      "market": null,
+      "registered_at": "2026-10-18T19:48:23.087248+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v2-c1-veikkausliiga",
+      "competition_key": "veikkausliiga",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-venezuela-primera-division",
+      "competition_key": "venezuela-primera-division",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-13T20:42:04.641549+00:00",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-virsliga",
+      "competition_key": "virsliga",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-12T17:44:49.190946+00:00",
+      "key_role": "autonome"
     },
     {
       "model_key": "elo-davidson-intl-ens",
@@ -493,6 +3346,15 @@
       "registered_at": "2026-06-29T18:05:45.462155+00:00",
       "key_role": "historique",
       "canonical_key": "elo-davidson-intl-w24t"
+    },
+    {
+      "model_key": "recette-generique-v1-zambie-super-league",
+      "competition_key": "zambie-super-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-14T19:09:34.854372+00:00",
+      "key_role": "autonome"
     }
   ]
 }
