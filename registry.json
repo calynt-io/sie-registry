@@ -1,8 +1,8 @@
 {
-  "_avertissement": "MIROIR PUBLIC généré automatiquement depuis Supabase (table model_registry). La production NE lit JAMAIS ce fichier : export_predictions_public.py interroge Supabase en direct (is_champion=true) à chaque exécution. Ce fichier est publié pour la transparence du lecteur. Régénérer : python3 generer_registry_public.py. key_role : 'historique' (préfixe -wc-, sous lequel vivent les prédictions) et 'canonique' (préfixe -intl-, identité post-renommage du 24/07/2026) sont des PAIRES appariées via la table models — les deux sont porteuses, aucune n'est un doublon supprimable ; 'autonome' = pas concerné par le renommage (clubs, PL). VERSION PUBLIQUE : champs label/notes retirés (aucun détail de paramétrage ni d'ablation exposé).",
+  "_avertissement": "MIROIR PUBLIC généré automatiquement depuis Supabase (table model_registry). La production NE lit JAMAIS ce fichier : export_predictions_public.py interroge Supabase en direct (is_champion=true) à chaque exécution. Ce fichier est publié pour la transparence du lecteur. Régénérer : python3 generer_registry_public.py. key_role : 'historique' (préfixe -wc-, sous lequel vivent les prédictions) et 'canonique' (préfixe -intl-, identité post-renommage du 24/07/2026) sont des PAIRES appariées via la table models — les deux sont porteuses, aucune n'est un doublon supprimable ; 'autonome' = pas concerné par le renommage (clubs, PL). VERSION PUBLIQUE : champs label/notes retirés (aucun détail de paramétrage ni d'ablation exposé) ; champs descriptifs génériques famille, type, date_gel, description (gabarit fixe, sans paramètre ni résultat).",
   "source_of_truth": "Supabase.model_registry (is_champion=true, lu en direct par export_predictions_public.py)",
   "generated_from": "Supabase.model_registry",
-  "generated_at": "2026-11-26T19:12:07.997881+00:00",
+  "generated_at": "2026-11-27T03:40:35.741891+00:00",
   "public_filtered": true,
   "model_count": 367,
   "models": [
@@ -13,6 +13,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-14T23:04:02.989997+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — 1. Liga (champion)",
       "key_role": "autonome"
     },
     {
@@ -22,6 +25,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-14T20:59:05.434671+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — 1. Liga Classic - Group 3 (champion)",
       "key_role": "autonome"
     },
     {
@@ -31,6 +37,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-13T20:42:04.641549+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — 1 Lyga (champion)",
       "key_role": "autonome"
     },
     {
@@ -40,6 +49,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-20T13:26:27.082462+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — 1. SNL (challenger)",
       "key_role": "autonome"
     },
     {
@@ -49,6 +61,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — 1. SNL (champion)",
       "key_role": "autonome"
     },
     {
@@ -58,6 +73,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-13T20:38:41.502249+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — 1a Divisió (champion)",
       "key_role": "autonome"
     },
     {
@@ -67,6 +85,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-14T19:07:08.837252+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — 2. Division - Group 1 (champion)",
       "key_role": "autonome"
     },
     {
@@ -76,6 +97,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-20T13:26:27.082462+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — 2. Division - Group 2 (challenger)",
       "key_role": "autonome"
     },
     {
@@ -85,6 +109,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — 2. Division - Group 2 (champion)",
       "key_role": "autonome"
     },
     {
@@ -94,6 +121,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-16T01:06:50.396828+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — 2. Lig (champion)",
       "key_role": "autonome"
     },
     {
@@ -103,6 +133,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-20T13:26:27.082462+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — 2. SNL (challenger)",
       "key_role": "autonome"
     },
     {
@@ -112,6 +145,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — 2. SNL (champion)",
       "key_role": "autonome"
     },
     {
@@ -121,6 +157,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T18:06:40.43753+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — 3. Lig - Group 1 (challenger)",
       "key_role": "autonome"
     },
     {
@@ -130,6 +169,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — 3. Lig - Group 1 (champion)",
       "key_role": "autonome"
     },
     {
@@ -139,6 +181,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-02T09:18:30.920953+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — 3. Lig - Group 2 (champion)",
       "key_role": "autonome"
     },
     {
@@ -148,6 +193,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-13T20:48:58.735421+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — 3. Liga (champion)",
       "key_role": "autonome"
     },
     {
@@ -157,6 +205,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-14T20:40:20.939198+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — 3. liga - MSFL (champion)",
       "key_role": "autonome"
     },
     {
@@ -166,6 +217,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-14T20:59:05.434671+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — 4. liga - Divizie B (champion)",
       "key_role": "autonome"
     },
     {
@@ -175,6 +229,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-14T20:59:05.434671+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — 4. liga - Divizie E (champion)",
       "key_role": "autonome"
     },
     {
@@ -184,6 +241,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-02T07:53:22.695109+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — A-League Women (champion)",
       "key_role": "autonome"
     },
     {
@@ -193,6 +253,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-03T19:40:04.07561+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — A Lyga (champion)",
       "key_role": "autonome"
     },
     {
@@ -202,6 +265,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-23T08:35:31.120894+00:00",
+      "famille": "Poisson coupes",
+      "type": "champion",
+      "description": "Poisson coupes — AFC Champions League Elite (champion)",
       "key_role": "autonome"
     },
     {
@@ -211,6 +277,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-15T21:15:17.08285+00:00",
+      "famille": "Elo + Poisson sélections",
+      "type": "champion",
+      "description": "Elo + Poisson sélections — Africa Cup of Nations - Qualification (champion)",
       "key_role": "autonome"
     },
     {
@@ -220,6 +289,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-20T13:26:27.082462+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — 1st Division (Afrique du Sud) (champion)",
       "key_role": "autonome"
     },
     {
@@ -229,6 +301,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — 1st Division (Afrique du Sud) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -238,6 +313,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-13T00:06:33.872188+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — 1st Division (Albanie) (champion)",
       "key_role": "autonome"
     },
     {
@@ -247,6 +325,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Superliga (Albanie) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -256,6 +337,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Superliga (Albanie) (champion)",
       "key_role": "autonome"
     },
     {
@@ -265,6 +349,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Ligue 1 (Algérie) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -274,6 +361,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Ligue 1 (Algérie) (champion)",
       "key_role": "autonome"
     },
     {
@@ -283,6 +373,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-02T10:23:00.752082+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Ligue 2 (Algérie) (champion)",
       "key_role": "autonome"
     },
     {
@@ -292,6 +385,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-11T17:38:35.534041+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Regionalliga - West (Allemagne) (champion)",
       "key_role": "autonome"
     },
     {
@@ -301,6 +397,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Allsvenskan (challenger)",
       "key_role": "autonome"
     },
     {
@@ -310,6 +409,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Allsvenskan (champion)",
       "key_role": "autonome"
     },
     {
@@ -319,6 +421,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-23T08:35:31.120894+00:00",
+      "famille": "Poisson coupes",
+      "type": "champion",
+      "description": "Poisson coupes — FA Cup (Angleterre) (champion)",
       "key_role": "autonome"
     },
     {
@@ -328,6 +433,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-23T08:35:31.120894+00:00",
+      "famille": "Poisson coupes",
+      "type": "champion",
+      "description": "Poisson coupes — League Cup (Angleterre) (champion)",
       "key_role": "autonome"
     },
     {
@@ -337,6 +445,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T18:06:40.43753+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — National League (Angleterre) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -346,6 +457,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — National League (Angleterre) (champion)",
       "key_role": "autonome"
     },
     {
@@ -355,6 +469,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-20T13:26:27.082462+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Division 1 (Arabie saoudite) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -364,6 +481,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Division 1 (Arabie saoudite) (champion)",
       "key_role": "autonome"
     },
     {
@@ -373,6 +493,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T18:06:40.43753+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Pro League (Arabie saoudite) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -382,6 +505,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Pro League (Arabie saoudite) (champion)",
       "key_role": "autonome"
     },
     {
@@ -391,6 +517,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-15T12:07:22.374305+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — First League (Arménie) (champion)",
       "key_role": "autonome"
     },
     {
@@ -400,6 +529,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-02T09:19:37.054009+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — 2. Liga (Autriche) (champion)",
       "key_role": "autonome"
     },
     {
@@ -409,6 +541,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Bundesliga (Autriche) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -418,6 +553,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Bundesliga (Autriche) (champion)",
       "key_role": "autonome"
     },
     {
@@ -427,6 +565,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-20T13:56:08.905375+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Regionalliga - West (Autriche) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -436,6 +577,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Regionalliga - West (Autriche) (champion)",
       "key_role": "autonome"
     },
     {
@@ -445,6 +589,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — 1. Division (Biélorussie) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -454,6 +601,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — 1. Division (Biélorussie) (champion)",
       "key_role": "autonome"
     },
     {
@@ -463,6 +613,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-12T17:44:49.190946+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Premier League (Biélorussie) (champion)",
       "key_role": "autonome"
     },
     {
@@ -472,6 +625,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-20T13:26:27.082462+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Botola Pro (challenger)",
       "key_role": "autonome"
     },
     {
@@ -481,6 +637,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Botola Pro (champion)",
       "key_role": "autonome"
     },
     {
@@ -490,6 +649,10 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-08-27T10:27:28.848276+00:00",
+      "famille": "Poisson-MLE club",
+      "type": "champion",
+      "description": "Poisson-MLE club — Campeonato Brasileiro Série A (champion)",
+      "date_gel": "2026-08-27",
       "key_role": "autonome",
       "hash": "d4a6afe9f153218c667b2de786e56abc4b76cb14db067d3a1c71bb6b91d70328"
     },
@@ -500,6 +663,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-12T13:55:06.66427+00:00",
+      "famille": "Projection de classement",
+      "type": "challenger",
+      "description": "Projection de classement — Campeonato Brasileiro Série A (challenger)",
       "key_role": "autonome"
     },
     {
@@ -509,6 +675,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-23T08:58:16.910994+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Campeonato Brasileiro Série A (challenger)",
       "key_role": "autonome"
     },
     {
@@ -518,6 +687,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-21T16:57:01.129481+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Brasileiro Women (challenger)",
       "key_role": "autonome"
     },
     {
@@ -527,6 +699,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Brasileiro Women (champion)",
       "key_role": "autonome"
     },
     {
@@ -536,6 +711,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-20T13:26:27.082462+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — First League (Bulgarie) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -545,6 +723,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — First League (Bulgarie) (champion)",
       "key_role": "autonome"
     },
     {
@@ -554,6 +735,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T18:06:40.43753+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Second League (Bulgarie) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -563,6 +747,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Second League (Bulgarie) (champion)",
       "key_role": "autonome"
     },
     {
@@ -572,6 +759,10 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-08-04T15:46:41.368094+00:00",
+      "famille": "Poisson-MLE club",
+      "type": "champion",
+      "description": "Poisson-MLE club — Bundesliga (champion)",
+      "date_gel": "2026-08-03",
       "key_role": "autonome",
       "hash": "7e0a68f22f58d2a98deb47f220a269a09170cdc30ff454b81115dde527bc75cd"
     },
@@ -582,6 +773,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-12T13:55:06.66427+00:00",
+      "famille": "Projection de classement",
+      "type": "challenger",
+      "description": "Projection de classement — Bundesliga (challenger)",
       "key_role": "autonome"
     },
     {
@@ -591,6 +785,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T17:17:19.734146+00:00",
+      "famille": "Projection de classement",
+      "type": "challenger",
+      "description": "Projection de classement — 2. Bundesliga (challenger)",
       "key_role": "autonome"
     },
     {
@@ -600,6 +797,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T17:07:21.443496+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — 2. Bundesliga (challenger)",
       "key_role": "autonome"
     },
     {
@@ -609,6 +809,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — 2. Bundesliga (champion)",
       "key_role": "autonome"
     },
     {
@@ -618,6 +821,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-20T13:55:37.913708+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Campionato (challenger)",
       "key_role": "autonome"
     },
     {
@@ -627,6 +833,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Campionato (champion)",
       "key_role": "autonome"
     },
     {
@@ -636,6 +845,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-12T17:44:49.190946+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Challenger Pro League (champion)",
       "key_role": "autonome"
     },
     {
@@ -645,6 +857,10 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-09-07T21:08:02.44476+00:00",
+      "famille": "Poisson-MLE club",
+      "type": "champion",
+      "description": "Poisson-MLE club — UEFA Champions League (champion)",
+      "date_gel": "2026-09-07",
       "key_role": "autonome"
     },
     {
@@ -654,6 +870,10 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-08-26T18:40:44.398983+00:00",
+      "famille": "Poisson-MLE club",
+      "type": "champion",
+      "description": "Poisson-MLE club — Championship (champion)",
+      "date_gel": "2026-08-26",
       "key_role": "autonome",
       "hash": "d9eb1658a92243a718219adf2e01e163758f66fb535fedccd9b4385d3c89c36a"
     },
@@ -664,6 +884,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-12T13:55:06.66427+00:00",
+      "famille": "Projection de classement",
+      "type": "challenger",
+      "description": "Projection de classement — Championship (challenger)",
       "key_role": "autonome"
     },
     {
@@ -673,6 +896,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-23T08:58:16.910994+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Championship (challenger)",
       "key_role": "autonome"
     },
     {
@@ -682,6 +908,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-13T20:48:58.735421+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Primera B (Chili) (champion)",
       "key_role": "autonome"
     },
     {
@@ -691,6 +920,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-12T17:44:49.190946+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Primera División (Chili) (champion)",
       "key_role": "autonome"
     },
     {
@@ -700,6 +932,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-19T17:52:29.010271+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — League One (Chine) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -709,6 +944,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — League One (Chine) (champion)",
       "key_role": "autonome"
     },
     {
@@ -718,6 +956,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T19:48:23.087248+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Super League (Chine) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -727,6 +968,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Super League (Chine) (champion)",
       "key_role": "autonome"
     },
     {
@@ -736,6 +980,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-19T17:52:29.010271+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — 1. Division (Chypre) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -745,6 +992,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — 1. Division (Chypre) (champion)",
       "key_role": "autonome"
     },
     {
@@ -754,6 +1004,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-21T16:57:01.129481+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — 2. Division (Chypre) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -763,6 +1016,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — 2. Division (Chypre) (champion)",
       "key_role": "autonome"
     },
     {
@@ -772,6 +1028,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-02T09:01:48.63368+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Primera A (Colombie) (champion)",
       "key_role": "autonome"
     },
     {
@@ -781,6 +1040,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-13T20:42:04.641549+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Primera B (Colombie) (champion)",
       "key_role": "autonome"
     },
     {
@@ -790,6 +1052,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-15T21:15:17.08285+00:00",
+      "famille": "Elo + Poisson sélections",
+      "type": "champion",
+      "description": "Elo + Poisson sélections — CONCACAF Nations League (champion)",
       "key_role": "autonome"
     },
     {
@@ -799,6 +1064,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-06T11:26:39.127929+00:00",
+      "famille": "Poisson coupes",
+      "type": "champion",
+      "description": "Poisson coupes — UEFA Conference League (champion)",
       "key_role": "autonome"
     },
     {
@@ -808,6 +1076,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-23T08:35:31.120894+00:00",
+      "famille": "Poisson coupes",
+      "type": "champion",
+      "description": "Poisson coupes — Copa do Brasil (champion)",
       "key_role": "autonome"
     },
     {
@@ -817,6 +1088,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-23T08:35:31.120894+00:00",
+      "famille": "Poisson coupes",
+      "type": "champion",
+      "description": "Poisson coupes — Coppa Italia (champion)",
       "key_role": "autonome"
     },
     {
@@ -826,6 +1100,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Primera División (Costa Rica) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -835,6 +1112,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Primera División (Costa Rica) (champion)",
       "key_role": "autonome"
     },
     {
@@ -844,6 +1124,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — HNL (Croatie) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -853,6 +1136,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — HNL (Croatie) (champion)",
       "key_role": "autonome"
     },
     {
@@ -862,6 +1148,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-19T17:52:29.010271+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Czech Liga (challenger)",
       "key_role": "autonome"
     },
     {
@@ -871,6 +1160,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Czech Liga (champion)",
       "key_role": "autonome"
     },
     {
@@ -880,6 +1172,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — 1. Division (Danemark) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -889,6 +1184,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — 1. Division (Danemark) (champion)",
       "key_role": "autonome"
     },
     {
@@ -898,6 +1196,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T17:07:21.443496+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Superliga (Danemark) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -907,6 +1208,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Superliga (Danemark) (champion)",
       "key_role": "autonome"
     },
     {
@@ -916,6 +1220,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-13T23:21:01.513621+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Division Intermedia (champion)",
       "key_role": "autonome"
     },
     {
@@ -925,6 +1232,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-14T21:59:39.744955+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Division Profesional - Apertura (champion)",
       "key_role": "autonome"
     },
     {
@@ -934,6 +1244,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-02T16:51:21.179901+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Division Profesional - Clausura (champion)",
       "key_role": "autonome"
     },
     {
@@ -943,6 +1256,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T17:17:19.734146+00:00",
+      "famille": "Projection de classement",
+      "type": "challenger",
+      "description": "Projection de classement — Championship (Écosse) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -952,6 +1268,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T17:07:21.443496+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Championship (Écosse) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -961,6 +1280,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Championship (Écosse) (champion)",
       "key_role": "autonome"
     },
     {
@@ -970,6 +1292,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T17:17:19.734146+00:00",
+      "famille": "Projection de classement",
+      "type": "challenger",
+      "description": "Projection de classement — League One (Écosse) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -979,6 +1304,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T17:07:21.443496+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — League One (Écosse) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -988,6 +1316,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — League One (Écosse) (champion)",
       "key_role": "autonome"
     },
     {
@@ -997,6 +1328,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T17:17:19.734146+00:00",
+      "famille": "Projection de classement",
+      "type": "challenger",
+      "description": "Projection de classement — League Two (Écosse) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1006,6 +1340,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T17:07:21.443496+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — League Two (Écosse) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1015,6 +1352,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — League Two (Écosse) (champion)",
       "key_role": "autonome"
     },
     {
@@ -1024,6 +1364,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T17:07:21.443496+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Premiership (Écosse) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1033,6 +1376,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Premiership (Écosse) (champion)",
       "key_role": "autonome"
     },
     {
@@ -1042,6 +1388,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T18:06:40.43753+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Eerste Divisie (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1051,6 +1400,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Eerste Divisie (champion)",
       "key_role": "autonome"
     },
     {
@@ -1060,6 +1412,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-19T17:52:29.010271+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Ekstraklasa (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1069,6 +1424,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Ekstraklasa (champion)",
       "key_role": "autonome"
     },
     {
@@ -1078,6 +1436,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-14T23:04:02.989997+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Elite One (champion)",
       "key_role": "autonome"
     },
     {
@@ -1087,6 +1448,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T17:17:19.734146+00:00",
+      "famille": "Projection de classement",
+      "type": "challenger",
+      "description": "Projection de classement — Eliteserien (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1096,6 +1460,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T17:07:21.443496+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Eliteserien (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1105,6 +1472,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Eliteserien (champion)",
       "key_role": "autonome"
     },
     {
@@ -1114,6 +1484,10 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-08-26T11:08:41.897605+00:00",
+      "famille": "Poisson-MLE club",
+      "type": "champion",
+      "description": "Poisson-MLE club — Eredivisie (champion)",
+      "date_gel": "2026-08-26",
       "key_role": "autonome",
       "hash": "a935d6be8f9561f4b494dd7cce00ab15db5a2953e5b1503fea1d6b10e472a280"
     },
@@ -1124,6 +1498,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-12T13:55:06.66427+00:00",
+      "famille": "Projection de classement",
+      "type": "challenger",
+      "description": "Projection de classement — Eredivisie (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1133,6 +1510,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-02T07:53:22.695109+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Eredivisie Women (champion)",
       "key_role": "autonome"
     },
     {
@@ -1142,6 +1522,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T19:48:23.087248+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Erovnuli Liga (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1151,6 +1534,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Erovnuli Liga (champion)",
       "key_role": "autonome"
     },
     {
@@ -1160,6 +1546,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T19:48:23.087248+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Erovnuli Liga 2 (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1169,6 +1558,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Erovnuli Liga 2 (champion)",
       "key_role": "autonome"
     },
     {
@@ -1178,6 +1570,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T19:48:23.087248+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Ettan - Norra (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1187,6 +1582,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Ettan - Norra (champion)",
       "key_role": "autonome"
     },
     {
@@ -1196,6 +1594,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-02T09:19:37.054009+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Ettan - Södra (champion)",
       "key_role": "autonome"
     },
     {
@@ -1205,6 +1606,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-23T08:35:31.120894+00:00",
+      "famille": "Poisson coupes",
+      "type": "champion",
+      "description": "Poisson coupes — UEFA Europa League (champion)",
       "key_role": "autonome"
     },
     {
@@ -1214,6 +1618,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-20T13:56:08.905375+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — FA WSL (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1223,6 +1630,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — FA WSL (champion)",
       "key_role": "autonome"
     },
     {
@@ -1232,6 +1642,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-20T13:56:08.905375+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Feminine Division 1 (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1241,6 +1654,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Feminine Division 1 (champion)",
       "key_role": "autonome"
     },
     {
@@ -1250,6 +1666,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — First NL (champion)",
       "key_role": "autonome"
     },
     {
@@ -1259,6 +1678,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — First NL (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1268,6 +1690,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-20T13:26:27.082462+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — FNL (champion)",
       "key_role": "autonome"
     },
     {
@@ -1277,6 +1702,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — FNL (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1286,6 +1714,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-21T16:57:01.129481+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Frauen Bundesliga (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1295,6 +1726,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Frauen Bundesliga (champion)",
       "key_role": "autonome"
     },
     {
@@ -1304,6 +1738,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-13T20:48:58.735421+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Premier League (Ghana) (champion)",
       "key_role": "autonome"
     },
     {
@@ -1313,6 +1750,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-14T23:04:02.989997+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Girabola (champion)",
       "key_role": "autonome"
     },
     {
@@ -1322,6 +1762,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-03T19:40:04.07561+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Super League 1 (champion)",
       "key_role": "autonome"
     },
     {
@@ -1331,6 +1774,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-02T09:01:48.63368+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Liga Nacional (Guatemala) (champion)",
       "key_role": "autonome"
     },
     {
@@ -1340,6 +1786,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-19T17:52:29.010271+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — I Liga (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1349,6 +1798,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — I Liga (champion)",
       "key_role": "autonome"
     },
     {
@@ -1358,6 +1810,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-13T23:21:01.513621+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — II Liga - East (champion)",
       "key_role": "autonome"
     },
     {
@@ -1367,6 +1822,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-14T20:40:20.939198+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Liga 1 (Indonésie) (champion)",
       "key_role": "autonome"
     },
     {
@@ -1376,6 +1834,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-14T20:40:20.939198+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Championship (Irlande du Nord) (champion)",
       "key_role": "autonome"
     },
     {
@@ -1385,6 +1846,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T17:07:21.443496+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Premiership (Irlande du Nord) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1394,6 +1858,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Premiership (Irlande du Nord) (champion)",
       "key_role": "autonome"
     },
     {
@@ -1403,6 +1870,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-20T13:26:27.082462+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Premier Division (Irlande) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1412,6 +1882,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Premier Division (Irlande) (champion)",
       "key_role": "autonome"
     },
     {
@@ -1421,6 +1894,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T17:17:19.734146+00:00",
+      "famille": "Projection de classement",
+      "type": "challenger",
+      "description": "Projection de classement — J1 League (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1430,6 +1906,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T17:07:21.443496+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — J1 League (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1439,6 +1918,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — J1 League (champion)",
       "key_role": "autonome"
     },
     {
@@ -1448,6 +1930,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T17:17:19.734146+00:00",
+      "famille": "Projection de classement",
+      "type": "challenger",
+      "description": "Projection de classement — J2 League (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1457,6 +1942,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T17:07:21.443496+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — J2 League (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1466,6 +1954,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — J2 League (champion)",
       "key_role": "autonome"
     },
     {
@@ -1475,6 +1966,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-19T17:52:29.010271+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — J3 League (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1484,6 +1978,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — J3 League (champion)",
       "key_role": "autonome"
     },
     {
@@ -1493,6 +1990,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-13T20:38:41.502249+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Premier League (Jamaïque) (champion)",
       "key_role": "autonome"
     },
     {
@@ -1502,6 +2002,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T17:07:21.443496+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Jupiler Pro League (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1511,6 +2014,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Jupiler Pro League (champion)",
       "key_role": "autonome"
     },
     {
@@ -1520,6 +2026,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-19T17:52:29.010271+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — K League 1 (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1529,6 +2038,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — K League 1 (champion)",
       "key_role": "autonome"
     },
     {
@@ -1538,6 +2050,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-02T10:23:00.752082+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — K League 2 (champion)",
       "key_role": "autonome"
     },
     {
@@ -1547,6 +2062,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-20T13:56:29.050696+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — K3 League (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1556,6 +2074,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — K3 League (champion)",
       "key_role": "autonome"
     },
     {
@@ -1565,6 +2086,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-15T11:04:07.751505+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Kakkonen - Lohko A (champion)",
       "key_role": "autonome"
     },
     {
@@ -1574,6 +2098,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-15T11:04:07.751505+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Kakkonen - Lohko B (champion)",
       "key_role": "autonome"
     },
     {
@@ -1583,6 +2110,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-15T11:04:07.751505+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Kakkonen - Lohko C (champion)",
       "key_role": "autonome"
     },
     {
@@ -1592,6 +2122,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-12T17:44:49.190946+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Premier League (Kazakhstan) (champion)",
       "key_role": "autonome"
     },
     {
@@ -1601,6 +2134,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Premier League (Koweït) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1610,6 +2146,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Premier League (Koweït) (champion)",
       "key_role": "autonome"
     },
     {
@@ -1619,6 +2158,10 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-08-04T15:46:41.368094+00:00",
+      "famille": "Poisson-MLE club",
+      "type": "champion",
+      "description": "Poisson-MLE club — Primera Division (champion)",
+      "date_gel": "2026-08-03",
       "key_role": "autonome",
       "hash": "430ed6efb72262444cfee855ab79fb54ee765db62076a00884e44eca4c6ef2f1"
     },
@@ -1629,6 +2172,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-12T13:55:06.66427+00:00",
+      "famille": "Projection de classement",
+      "type": "challenger",
+      "description": "Projection de classement — Primera Division (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1638,6 +2184,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-23T08:58:16.910994+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Primera Division (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1647,6 +2196,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-06T18:32:21.084945+00:00",
+      "famille": "Poisson-MLE club",
+      "type": "champion",
+      "description": "Poisson-MLE club — League One (champion)",
       "key_role": "autonome"
     },
     {
@@ -1656,6 +2208,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T17:17:19.734146+00:00",
+      "famille": "Projection de classement",
+      "type": "challenger",
+      "description": "Projection de classement — League Two (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1665,6 +2220,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T17:07:21.443496+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — League Two (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1674,6 +2232,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — League Two (champion)",
       "key_role": "autonome"
     },
     {
@@ -1683,6 +2244,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T19:48:23.087248+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Liga de Expansión MX (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1692,6 +2256,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Liga de Expansión MX (champion)",
       "key_role": "autonome"
     },
     {
@@ -1701,6 +2268,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-13T00:06:33.872188+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Liga II (champion)",
       "key_role": "autonome"
     },
     {
@@ -1710,6 +2280,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-13T00:06:33.872188+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Liga Leumit (champion)",
       "key_role": "autonome"
     },
     {
@@ -1719,6 +2292,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Liga MX (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1728,6 +2304,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Liga MX (champion)",
       "key_role": "autonome"
     },
     {
@@ -1737,6 +2316,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-13T20:48:58.735421+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Liga Panameña de Fútbol (champion)",
       "key_role": "autonome"
     },
     {
@@ -1746,6 +2328,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T18:06:40.43753+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Liga Portugal 2 (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1755,6 +2340,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Liga Portugal 2 (champion)",
       "key_role": "autonome"
     },
     {
@@ -1764,6 +2352,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Liga Pro (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1773,6 +2364,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Liga Pro (champion)",
       "key_role": "autonome"
     },
     {
@@ -1782,6 +2376,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-02T09:01:48.63368+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Liga Profesional Argentina (champion)",
       "key_role": "autonome"
     },
     {
@@ -1791,6 +2388,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Ligat Ha'al (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1800,6 +2400,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Ligat Ha'al (champion)",
       "key_role": "autonome"
     },
     {
@@ -1809,6 +2412,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-20T13:56:08.905375+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Ligi kuu Bara (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1818,6 +2424,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Ligi kuu Bara (champion)",
       "key_role": "autonome"
     },
     {
@@ -1827,6 +2436,10 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-08-04T15:46:41.368094+00:00",
+      "famille": "Poisson-MLE club",
+      "type": "champion",
+      "description": "Poisson-MLE club — Ligue 1 (champion)",
+      "date_gel": "2026-08-03",
       "key_role": "autonome",
       "hash": "621ae1b8e5f92be6706f9d812f5a79939a3c73da0f6fdd4bfe20cdfd3a602df0"
     },
@@ -1837,6 +2450,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-12T13:55:06.66427+00:00",
+      "famille": "Projection de classement",
+      "type": "challenger",
+      "description": "Projection de classement — Ligue 1 (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1846,6 +2462,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T18:06:40.43753+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Ligue 2 (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1855,6 +2474,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Ligue 2 (champion)",
       "key_role": "autonome"
     },
     {
@@ -1864,6 +2486,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-02T09:01:48.63368+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — First League (Macédoine du Nord) (champion)",
       "key_role": "autonome"
     },
     {
@@ -1873,6 +2498,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-14T20:59:05.434671+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Second League (Macédoine du Nord) (champion)",
       "key_role": "autonome"
     },
     {
@@ -1882,6 +2510,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-19T17:21:28.709109+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Major League Soccer (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1891,6 +2522,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Major League Soccer (champion)",
       "key_role": "autonome"
     },
     {
@@ -1900,6 +2534,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-13T20:40:24.091586+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Super League (Malaisie) (champion)",
       "key_role": "autonome"
     },
     {
@@ -1909,6 +2546,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-14T20:40:20.939198+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Challenge League (Malte) (champion)",
       "key_role": "autonome"
     },
     {
@@ -1918,6 +2558,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-14T22:31:46.260481+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Premier League (Malte) (champion)",
       "key_role": "autonome"
     },
     {
@@ -1927,6 +2570,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-13T15:04:13.297098+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Meistaradeildin (champion)",
       "key_role": "autonome"
     },
     {
@@ -1936,6 +2582,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-12T17:44:49.190946+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Meistriliiga (champion)",
       "key_role": "autonome"
     },
     {
@@ -1945,6 +2594,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-20T13:26:27.082462+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — First League (Monténégro) (champion)",
       "key_role": "autonome"
     },
     {
@@ -1954,6 +2606,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — First League (Monténégro) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -1963,6 +2618,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-02T10:23:00.752082+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Second League (Monténégro) (champion)",
       "key_role": "autonome"
     },
     {
@@ -1972,6 +2630,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-22T19:27:13.568338+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — National 2 - Group A (champion)",
       "key_role": "autonome"
     },
     {
@@ -1981,6 +2642,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-22T19:27:44.496877+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — National 2 - Group B (champion)",
       "key_role": "autonome"
     },
     {
@@ -1990,6 +2654,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-14T21:59:39.744955+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — National 2 - Group C (champion)",
       "key_role": "autonome"
     },
     {
@@ -1999,6 +2666,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — National Division (challenger)",
       "key_role": "autonome"
     },
     {
@@ -2008,6 +2678,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — National Division (champion)",
       "key_role": "autonome"
     },
     {
@@ -2017,6 +2690,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-13T23:21:01.513621+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — National League - North (champion)",
       "key_role": "autonome"
     },
     {
@@ -2026,6 +2702,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-13T23:21:01.513621+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — National League - South (champion)",
       "key_role": "autonome"
     },
     {
@@ -2035,6 +2714,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — NB I (challenger)",
       "key_role": "autonome"
     },
     {
@@ -2044,6 +2726,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — NB I (champion)",
       "key_role": "autonome"
     },
     {
@@ -2053,6 +2738,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-12T17:44:49.190946+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — NB II (champion)",
       "key_role": "autonome"
     },
     {
@@ -2062,6 +2750,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-14T20:40:20.939198+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — NB III - Northeast (champion)",
       "key_role": "autonome"
     },
     {
@@ -2071,6 +2762,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-15T10:36:52.858992+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — NB III - Southwest (champion)",
       "key_role": "autonome"
     },
     {
@@ -2080,6 +2774,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-13T23:24:26.834708+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Non League Premier - Isthmian (champion)",
       "key_role": "autonome"
     },
     {
@@ -2089,6 +2786,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-16T07:15:54.641191+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Non League Premier - Northern (champion)",
       "key_role": "autonome"
     },
     {
@@ -2098,6 +2798,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — 1. Division (Norvège) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -2107,6 +2810,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — 1. Division (Norvège) (champion)",
       "key_role": "autonome"
     },
     {
@@ -2116,6 +2822,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-14T19:08:27.611862+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — NPFL (champion)",
       "key_role": "autonome"
     },
     {
@@ -2125,6 +2834,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-13T20:48:58.735421+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — NWSL Women (champion)",
       "key_role": "autonome"
     },
     {
@@ -2134,6 +2846,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-14T21:59:39.744955+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Oberliga - Hamburg (champion)",
       "key_role": "autonome"
     },
     {
@@ -2143,6 +2858,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-15T10:36:52.858992+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Premier League (Ouganda) (champion)",
       "key_role": "autonome"
     },
     {
@@ -2152,6 +2870,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-13T20:40:24.091586+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Super League (Ouzbékistan) (champion)",
       "key_role": "autonome"
     },
     {
@@ -2161,6 +2882,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-02T10:23:00.752082+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Premier League (Pays de Galles) (champion)",
       "key_role": "autonome"
     },
     {
@@ -2170,6 +2894,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-20T13:26:27.082462+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Segunda División (Pérou) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -2179,6 +2906,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Segunda División (Pérou) (champion)",
       "key_role": "autonome"
     },
     {
@@ -2188,6 +2918,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T19:48:23.087248+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Persian Gulf Pro League (challenger)",
       "key_role": "autonome"
     },
     {
@@ -2197,6 +2930,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Persian Gulf Pro League (champion)",
       "key_role": "autonome"
     },
     {
@@ -2206,6 +2942,9 @@
       "is_champion": false,
       "market": "1X2",
       "registered_at": "2026-06-27T20:44:30.658669+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — Premier League (challenger)",
       "key_role": "autonome"
     },
     {
@@ -2215,6 +2954,10 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-08-04T15:46:41.368094+00:00",
+      "famille": "Poisson-MLE club",
+      "type": "champion",
+      "description": "Poisson-MLE club — Premier League (champion)",
+      "date_gel": "2026-08-03",
       "key_role": "autonome",
       "hash": "c2b71a4012c6bbc901a3331cb325a280a9e687307fa8e56742401f6d3a347a09"
     },
@@ -2225,6 +2968,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-12T13:55:06.66427+00:00",
+      "famille": "Projection de classement",
+      "type": "challenger",
+      "description": "Projection de classement — Premier League (challenger)",
       "key_role": "autonome"
     },
     {
@@ -2234,6 +2980,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-23T08:58:16.910994+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Premier League (challenger)",
       "key_role": "autonome"
     },
     {
@@ -2243,6 +2992,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-02T09:01:48.63368+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Premier Soccer League (champion)",
       "key_role": "autonome"
     },
     {
@@ -2252,6 +3004,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Premijer Liga (challenger)",
       "key_role": "autonome"
     },
     {
@@ -2261,6 +3016,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Premijer Liga (champion)",
       "key_role": "autonome"
     },
     {
@@ -2270,6 +3028,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-12T17:44:49.190946+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Premyer Liqa (champion)",
       "key_role": "autonome"
     },
     {
@@ -2279,6 +3040,10 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-08-26T08:16:49.916362+00:00",
+      "famille": "Poisson-MLE club",
+      "type": "champion",
+      "description": "Poisson-MLE club — Primeira Liga (champion)",
+      "date_gel": "2026-08-26",
       "key_role": "autonome",
       "hash": "93a2eb1014cf6524b9685ed49ffcb60d93e040aae7d09d8861a4e7c047128721"
     },
@@ -2289,6 +3054,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-12T13:55:06.66427+00:00",
+      "famille": "Projection de classement",
+      "type": "challenger",
+      "description": "Projection de classement — Primeira Liga (challenger)",
       "key_role": "autonome"
     },
     {
@@ -2298,6 +3066,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-14T19:08:27.611862+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Primera B Metropolitana (champion)",
       "key_role": "autonome"
     },
     {
@@ -2307,6 +3078,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-14T23:04:02.989997+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Primera C (champion)",
       "key_role": "autonome"
     },
     {
@@ -2316,6 +3090,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-14T23:04:02.989997+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Primera División - Clausura (champion)",
       "key_role": "autonome"
     },
     {
@@ -2325,6 +3102,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-20T13:26:27.082462+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Primera División Femenina (challenger)",
       "key_role": "autonome"
     },
     {
@@ -2334,6 +3114,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Primera División Femenina (champion)",
       "key_role": "autonome"
     },
     {
@@ -2343,6 +3126,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-02T09:18:30.920953+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Primera División RFEF - Group 1 (champion)",
       "key_role": "autonome"
     },
     {
@@ -2352,6 +3138,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-14T22:31:46.260481+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Primera División RFEF - Group 2 (champion)",
       "key_role": "autonome"
     },
     {
@@ -2361,6 +3150,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-02T10:23:00.752082+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Primera Nacional (champion)",
       "key_role": "autonome"
     },
     {
@@ -2370,6 +3162,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-02T16:51:21.179901+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Prva Liga (champion)",
       "key_role": "autonome"
     },
     {
@@ -2379,6 +3174,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-14T20:59:05.434671+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Regionalliga - Nordost (champion)",
       "key_role": "autonome"
     },
     {
@@ -2388,6 +3186,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-14T23:04:02.989997+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Regionalliga - Ost (champion)",
       "key_role": "autonome"
     },
     {
@@ -2397,6 +3198,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-02T09:18:30.920953+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Regionalliga - SudWest (champion)",
       "key_role": "autonome"
     },
     {
@@ -2406,6 +3210,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-02T10:23:00.752082+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Liga I (Roumanie) (champion)",
       "key_role": "autonome"
     },
     {
@@ -2415,6 +3222,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — First League (Russie) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -2424,6 +3234,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — First League (Russie) (champion)",
       "key_role": "autonome"
     },
     {
@@ -2433,6 +3246,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Premier League (Russie) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -2442,6 +3258,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Premier League (Russie) (champion)",
       "key_role": "autonome"
     },
     {
@@ -2451,6 +3270,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T18:06:40.43753+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Segunda División (challenger)",
       "key_role": "autonome"
     },
     {
@@ -2460,6 +3282,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Segunda División (champion)",
       "key_role": "autonome"
     },
     {
@@ -2469,6 +3294,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-14T23:04:02.989997+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Segunda División RFEF - Group 5 (champion)",
       "key_role": "autonome"
     },
     {
@@ -2478,6 +3306,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-02T10:23:00.752082+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Super Liga (Serbie) (champion)",
       "key_role": "autonome"
     },
     {
@@ -2487,6 +3318,10 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-08-25T20:23:00.836966+00:00",
+      "famille": "Poisson-MLE club",
+      "type": "champion",
+      "description": "Poisson-MLE club — Serie A (champion)",
+      "date_gel": "2026-08-25",
       "key_role": "autonome",
       "hash": "94d8ed795e936e0806246a5ab2e12de362f94ef5517234812d2538c07f18c57a"
     },
@@ -2497,6 +3332,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-12T13:55:06.66427+00:00",
+      "famille": "Projection de classement",
+      "type": "challenger",
+      "description": "Projection de classement — Serie A (challenger)",
       "key_role": "autonome"
     },
     {
@@ -2506,6 +3344,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-20T13:20:03.440734+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Serie A Women (challenger)",
       "key_role": "autonome"
     },
     {
@@ -2515,6 +3356,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Serie A Women (champion)",
       "key_role": "autonome"
     },
     {
@@ -2524,6 +3368,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T18:06:40.43753+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Serie B (challenger)",
       "key_role": "autonome"
     },
     {
@@ -2533,6 +3380,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Serie B (champion)",
       "key_role": "autonome"
     },
     {
@@ -2542,6 +3392,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-14T21:59:39.744955+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Serie C (champion)",
       "key_role": "autonome"
     },
     {
@@ -2551,6 +3404,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-14T21:59:39.744955+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Serie C - Girone A (champion)",
       "key_role": "autonome"
     },
     {
@@ -2560,6 +3416,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-02T10:23:00.752082+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Serie C - Girone B (champion)",
       "key_role": "autonome"
     },
     {
@@ -2569,6 +3428,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-02T09:18:30.920953+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Serie C - Girone C (champion)",
       "key_role": "autonome"
     },
     {
@@ -2578,6 +3440,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-13T15:04:13.297098+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Premier League (Singapour) (champion)",
       "key_role": "autonome"
     },
     {
@@ -2587,6 +3452,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-14T22:31:46.260481+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — 2. liga (Slovaquie) (champion)",
       "key_role": "autonome"
     },
     {
@@ -2596,6 +3464,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-20T13:26:27.082462+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Super Liga (Slovaquie) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -2605,6 +3476,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Super Liga (Slovaquie) (champion)",
       "key_role": "autonome"
     },
     {
@@ -2614,6 +3488,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-13T20:38:41.502249+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Stars League (champion)",
       "key_role": "autonome"
     },
     {
@@ -2623,6 +3500,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-18T19:48:23.087248+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Challenge League (Suisse) (champion)",
       "key_role": "autonome"
     },
     {
@@ -2632,6 +3512,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Challenge League (Suisse) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -2641,6 +3524,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T17:17:19.734146+00:00",
+      "famille": "Projection de classement",
+      "type": "challenger",
+      "description": "Projection de classement — Super League (Suisse) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -2650,6 +3536,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T17:07:21.443496+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Super League (Suisse) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -2659,6 +3548,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Super League (Suisse) (champion)",
       "key_role": "autonome"
     },
     {
@@ -2668,6 +3560,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T18:06:40.43753+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Süper Lig (challenger)",
       "key_role": "autonome"
     },
     {
@@ -2677,6 +3572,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Süper Lig (champion)",
       "key_role": "autonome"
     },
     {
@@ -2686,6 +3584,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-19T17:52:29.010271+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Superettan (challenger)",
       "key_role": "autonome"
     },
     {
@@ -2695,6 +3596,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Superettan (champion)",
       "key_role": "autonome"
     },
     {
@@ -2704,6 +3608,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-02T09:18:30.920953+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Tercera División RFEF - Group 14 (champion)",
       "key_role": "autonome"
     },
     {
@@ -2713,6 +3620,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-02T09:18:30.920953+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Tercera División RFEF - Group 15 (champion)",
       "key_role": "autonome"
     },
     {
@@ -2722,6 +3632,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-02T09:18:30.920953+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Tercera División RFEF - Group 16 (champion)",
       "key_role": "autonome"
     },
     {
@@ -2731,6 +3644,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-13T20:42:04.641549+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Tercera División RFEF - Group 18 (champion)",
       "key_role": "autonome"
     },
     {
@@ -2740,6 +3656,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-02T09:18:30.920953+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Tercera División RFEF - Group 2 (champion)",
       "key_role": "autonome"
     },
     {
@@ -2749,6 +3668,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-02T16:51:21.179901+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Tercera División RFEF - Group 3 (champion)",
       "key_role": "autonome"
     },
     {
@@ -2758,6 +3680,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-14T22:31:46.260481+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Tercera División RFEF - Group 5 (champion)",
       "key_role": "autonome"
     },
     {
@@ -2767,6 +3692,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-02T09:18:30.920953+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Tercera División RFEF - Group 6 (champion)",
       "key_role": "autonome"
     },
     {
@@ -2776,6 +3704,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-02T16:51:21.179901+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Tercera División RFEF - Group 7 (champion)",
       "key_role": "autonome"
     },
     {
@@ -2785,6 +3716,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-02T09:18:30.920953+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Tercera División RFEF - Group 8 (champion)",
       "key_role": "autonome"
     },
     {
@@ -2794,6 +3728,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T18:06:40.43753+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Thai League 1 (challenger)",
       "key_role": "autonome"
     },
     {
@@ -2803,6 +3740,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Thai League 1 (champion)",
       "key_role": "autonome"
     },
     {
@@ -2812,6 +3752,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-14T20:40:20.939198+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Thai League 2 (champion)",
       "key_role": "autonome"
     },
     {
@@ -2821,6 +3764,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T19:10:49.351457+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Ligue 1 (Tunisie) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -2830,6 +3776,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Ligue 1 (Tunisie) (champion)",
       "key_role": "autonome"
     },
     {
@@ -2839,6 +3788,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-02T09:01:48.63368+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — 1. Lig (Turquie) (champion)",
       "key_role": "autonome"
     },
     {
@@ -2848,6 +3800,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-20T13:55:37.913708+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Tweede Divisie (champion)",
       "key_role": "autonome"
     },
     {
@@ -2857,6 +3812,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Tweede Divisie (challenger)",
       "key_role": "autonome"
     },
     {
@@ -2866,6 +3824,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-15T21:15:17.08285+00:00",
+      "famille": "Elo + Poisson sélections",
+      "type": "champion",
+      "description": "Elo + Poisson sélections — UEFA Nations League (champion)",
       "key_role": "autonome"
     },
     {
@@ -2875,6 +3836,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-20T17:29:10.301904+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Premier League (Ukraine) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -2884,6 +3848,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Premier League (Ukraine) (champion)",
       "key_role": "autonome"
     },
     {
@@ -2893,6 +3860,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-20T13:26:27.082462+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Segunda División (Uruguay) (champion)",
       "key_role": "autonome"
     },
     {
@@ -2902,6 +3872,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Segunda División (Uruguay) (challenger)",
       "key_role": "autonome"
     },
     {
@@ -2911,6 +3884,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T19:48:23.087248+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Úrvalsdeild (challenger)",
       "key_role": "autonome"
     },
     {
@@ -2920,6 +3896,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Úrvalsdeild (champion)",
       "key_role": "autonome"
     },
     {
@@ -2929,6 +3908,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-13T20:40:24.091586+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — USL League One (champion)",
       "key_role": "autonome"
     },
     {
@@ -2938,6 +3920,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-10-18T19:48:23.087248+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "challenger",
+      "description": "Poisson-MLE générique — Veikkausliiga (challenger)",
       "key_role": "autonome"
     },
     {
@@ -2947,6 +3932,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-10-21T17:55:25.15632+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Veikkausliiga (champion)",
       "key_role": "autonome"
     },
     {
@@ -2956,6 +3944,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-13T20:42:04.641549+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Primera División (Venezuela) (champion)",
       "key_role": "autonome"
     },
     {
@@ -2965,6 +3956,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-12T17:44:49.190946+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Virsliga (champion)",
       "key_role": "autonome"
     },
     {
@@ -2974,6 +3968,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
       "key_role": "canonique",
       "historical_key": "elo-davidson-wc-ens"
     },
@@ -2984,6 +3981,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "famille": "Elo",
+      "type": "champion",
+      "description": "Elo — FIFA World Cup (champion)",
       "key_role": "canonique",
       "historical_key": "elo-davidson-wc-ens-mle"
     },
@@ -2994,6 +3994,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
       "key_role": "canonique",
       "historical_key": "elo-davidson-wc-gd"
     },
@@ -3004,6 +4007,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
       "key_role": "canonique",
       "historical_key": "elo-davidson-wc-hfa"
     },
@@ -3014,6 +4020,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
       "key_role": "canonique",
       "historical_key": "elo-davidson-wc-hfat"
     },
@@ -3024,6 +4033,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
       "key_role": "canonique",
       "historical_key": "elo-davidson-wc-l10"
     },
@@ -3034,6 +4046,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
       "key_role": "canonique",
       "historical_key": "elo-davidson-wc-l11"
     },
@@ -3044,6 +4059,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
       "key_role": "canonique",
       "historical_key": "elo-davidson-wc-l12"
     },
@@ -3054,6 +4072,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
       "key_role": "canonique",
       "historical_key": "elo-davidson-wc-l13"
     },
@@ -3064,6 +4085,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
       "key_role": "canonique",
       "historical_key": "elo-davidson-wc-l14"
     },
@@ -3074,6 +4098,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
       "key_role": "canonique",
       "historical_key": "elo-davidson-wc-negbin"
     },
@@ -3084,6 +4111,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
       "key_role": "canonique",
       "historical_key": "elo-davidson-wc-negbin-mle"
     },
@@ -3094,6 +4124,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
       "key_role": "canonique",
       "historical_key": "elo-davidson-wc-poisson"
     },
@@ -3104,6 +4137,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
       "key_role": "canonique",
       "historical_key": "elo-davidson-wc-poisson-mle"
     },
@@ -3114,6 +4150,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
       "key_role": "canonique",
       "historical_key": "elo-davidson-wc-poisson-v2"
     },
@@ -3124,6 +4163,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
       "key_role": "canonique",
       "historical_key": "elo-davidson-wc-v1"
     },
@@ -3134,6 +4176,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
       "key_role": "canonique",
       "historical_key": "elo-davidson-wc-v2"
     },
@@ -3144,6 +4189,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
       "key_role": "canonique",
       "historical_key": "elo-davidson-wc-w24"
     },
@@ -3154,6 +4202,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-07-24T10:13:05.422654+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
       "key_role": "canonique",
       "historical_key": "elo-davidson-wc-w24t"
     },
@@ -3164,6 +4215,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-07-01T11:28:24.303435+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
       "key_role": "historique",
       "canonical_key": "elo-davidson-intl-ens"
     },
@@ -3174,6 +4228,10 @@
       "is_champion": false,
       "market": "1X2",
       "registered_at": "2026-07-19T17:32:54.980174+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
+      "date_gel": "2026-07-19",
       "key_role": "historique",
       "canonical_key": "elo-davidson-intl-ens-mle"
     },
@@ -3184,6 +4242,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-06-29T19:17:20.227141+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
       "key_role": "historique",
       "canonical_key": "elo-davidson-intl-gd"
     },
@@ -3194,6 +4255,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-06-29T18:34:15.648647+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
       "key_role": "historique",
       "canonical_key": "elo-davidson-intl-hfa"
     },
@@ -3204,6 +4268,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-06-29T18:34:15.648647+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
       "key_role": "historique",
       "canonical_key": "elo-davidson-intl-hfat"
     },
@@ -3214,6 +4281,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-06-28T14:04:02.941024+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
       "key_role": "historique",
       "canonical_key": "elo-davidson-intl-l10"
     },
@@ -3224,6 +4294,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-06-28T14:04:02.941024+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
       "key_role": "historique",
       "canonical_key": "elo-davidson-intl-l11"
     },
@@ -3234,6 +4307,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-06-28T14:04:02.941024+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
       "key_role": "historique",
       "canonical_key": "elo-davidson-intl-l12"
     },
@@ -3244,6 +4320,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-06-28T14:04:02.941024+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
       "key_role": "historique",
       "canonical_key": "elo-davidson-intl-l13"
     },
@@ -3254,6 +4333,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-06-28T14:04:02.941024+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
       "key_role": "historique",
       "canonical_key": "elo-davidson-intl-l14"
     },
@@ -3264,6 +4346,10 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-07-13T18:36:11.595037+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
+      "date_gel": "2026-07-13",
       "key_role": "historique",
       "canonical_key": "elo-davidson-intl-negbin"
     },
@@ -3274,6 +4360,10 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-07-19T17:32:54.980174+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
+      "date_gel": "2026-07-19",
       "key_role": "historique",
       "canonical_key": "elo-davidson-intl-negbin-mle"
     },
@@ -3284,6 +4374,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-07-01T11:28:24.303435+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
       "key_role": "historique",
       "canonical_key": "elo-davidson-intl-poisson"
     },
@@ -3294,6 +4387,10 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-07-19T17:32:54.980174+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
+      "date_gel": "2026-07-19",
       "key_role": "historique",
       "canonical_key": "elo-davidson-intl-poisson-mle"
     },
@@ -3304,6 +4401,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-07-20T19:21:39.36548+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
       "key_role": "historique",
       "canonical_key": "elo-davidson-intl-poisson-v2"
     },
@@ -3314,6 +4414,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-06-27T20:44:30.658669+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
       "key_role": "historique",
       "canonical_key": "elo-davidson-intl-v1"
     },
@@ -3324,6 +4427,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-06-27T20:44:30.658669+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
       "key_role": "historique",
       "canonical_key": "elo-davidson-intl-v2"
     },
@@ -3334,6 +4440,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-06-29T18:05:45.462155+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
       "key_role": "historique",
       "canonical_key": "elo-davidson-intl-w24"
     },
@@ -3344,6 +4453,9 @@
       "is_champion": false,
       "market": null,
       "registered_at": "2026-06-29T18:05:45.462155+00:00",
+      "famille": "Elo",
+      "type": "challenger",
+      "description": "Elo — FIFA World Cup (challenger)",
       "key_role": "historique",
       "canonical_key": "elo-davidson-intl-w24t"
     },
@@ -3354,6 +4466,9 @@
       "is_champion": true,
       "market": null,
       "registered_at": "2026-11-14T19:09:34.854372+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Super League (Zambie) (champion)",
       "key_role": "autonome"
     }
   ]
