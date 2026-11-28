@@ -2,9 +2,9 @@
   "_avertissement": "MIROIR PUBLIC généré automatiquement depuis Supabase (table model_registry). La production NE lit JAMAIS ce fichier : export_predictions_public.py interroge Supabase en direct (is_champion=true) à chaque exécution. Ce fichier est publié pour la transparence du lecteur. Régénérer : python3 generer_registry_public.py. key_role : 'historique' (préfixe -wc-, sous lequel vivent les prédictions) et 'canonique' (préfixe -intl-, identité post-renommage du 24/07/2026) sont des PAIRES appariées via la table models — les deux sont porteuses, aucune n'est un doublon supprimable ; 'autonome' = pas concerné par le renommage (clubs, PL). VERSION PUBLIQUE : champs label/notes retirés (aucun détail de paramétrage ni d'ablation exposé) ; champs descriptifs génériques famille, type, date_gel, description (gabarit fixe, sans paramètre ni résultat).",
   "source_of_truth": "Supabase.model_registry (is_champion=true, lu en direct par export_predictions_public.py)",
   "generated_from": "Supabase.model_registry",
-  "generated_at": "2026-11-27T03:40:35.741891+00:00",
+  "generated_at": "2026-11-28T03:21:50.910856+00:00",
   "public_filtered": true,
-  "model_count": 367,
+  "model_count": 374,
   "models": [
     {
       "model_key": "recette-generique-v1-1-liga",
@@ -511,6 +511,18 @@
       "key_role": "autonome"
     },
     {
+      "model_key": "recette-generique-v1-argentine-reserve-league",
+      "competition_key": "argentine-reserve-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-27T10:27:23.600252+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Reserve League (Argentine) (champion)",
+      "key_role": "autonome"
+    },
+    {
       "model_key": "recette-generique-v1-armenie-first-league",
       "competition_key": "armenie-first-league",
       "status": "champion",
@@ -520,6 +532,18 @@
       "famille": "Poisson-MLE générique",
       "type": "champion",
       "description": "Poisson-MLE générique — First League (Arménie) (champion)",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-armenie-premier-league",
+      "competition_key": "armenie-premier-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-27T12:56:44.52069+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Premier League (Arménie) (champion)",
       "key_role": "autonome"
     },
     {
@@ -1250,6 +1274,18 @@
       "key_role": "autonome"
     },
     {
+      "model_key": "recette-generique-v1-druha-liga",
+      "competition_key": "druha-liga",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-27T12:56:44.52069+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Druha Liga (champion)",
+      "key_role": "autonome"
+    },
+    {
       "model_key": "projection-classement-recette-v1-ecosse-championship",
       "competition_key": "ecosse-championship",
       "status": "challenger",
@@ -1825,6 +1861,18 @@
       "famille": "Poisson-MLE générique",
       "type": "champion",
       "description": "Poisson-MLE générique — Liga 1 (Indonésie) (champion)",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-iraqi-league",
+      "competition_key": "iraqi-league",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-27T14:20:58.236678+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Iraqi League (champion)",
       "key_role": "autonome"
     },
     {
@@ -2789,6 +2837,30 @@
       "famille": "Poisson-MLE générique",
       "type": "champion",
       "description": "Poisson-MLE générique — Non League Premier - Northern (champion)",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-non-league-premier-southern-central",
+      "competition_key": "non-league-premier-southern-central",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-27T10:27:23.600252+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Non League Premier - Southern Central (champion)",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-non-league-premier-southern-south",
+      "competition_key": "non-league-premier-southern-south",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-27T10:27:23.600252+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Non League Premier - Southern South (champion)",
       "key_role": "autonome"
     },
     {
@@ -3779,6 +3851,18 @@
       "famille": "Poisson-MLE générique",
       "type": "champion",
       "description": "Poisson-MLE générique — Ligue 1 (Tunisie) (champion)",
+      "key_role": "autonome"
+    },
+    {
+      "model_key": "recette-generique-v1-tunisie-ligue-2",
+      "competition_key": "tunisie-ligue-2",
+      "status": "champion",
+      "is_champion": true,
+      "market": null,
+      "registered_at": "2026-11-27T22:25:16.189669+00:00",
+      "famille": "Poisson-MLE générique",
+      "type": "champion",
+      "description": "Poisson-MLE générique — Ligue 2 (Tunisie) (champion)",
       "key_role": "autonome"
     },
     {

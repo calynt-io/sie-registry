@@ -1,13 +1,13 @@
 # REGISTRY — Sports Intelligence Engine (miroir public)
 
-> ⚠️ **Miroir généré automatiquement depuis Supabase `model_registry` le 2026-11-27T03:40:35.741891+00:00.**
+> ⚠️ **Miroir généré automatiquement depuis Supabase `model_registry` le 2026-11-28T03:21:50.910856+00:00.**
 > La production **ne lit jamais ce fichier** — `export_predictions_public.py`
 > interroge la table Supabase **en direct** (`is_champion = true`). Ce document
 > est publié pour la **transparence du lecteur**, régénéré par `generer_registry_public.py`.
 >
 > 🔒 **Version publique** : les champs `label`/`notes` (détail de paramétrage, ablations) sont volontairement retirés.
 
-**Total : 367 modèles enregistrés** — 219 champion(s) désigné(s), 148 challenger(s).
+**Total : 374 modèles enregistrés** — 226 champion(s) désigné(s), 148 challenger(s).
 
 > ℹ️ **Renommage CdM→International (24/07/2026).** 19 clés `historique` (préfixe `-wc-`, sous lesquelles vivent les prédictions en base) sont appariées 1-pour-1 à 19 clés `canonique` (préfixe `-intl-`, identité post-renommage) via la table `models`. **Les deux sont porteuses** — aucune n'est un doublon supprimable. `autonome` = hors renommage (clubs, PL).
 
@@ -208,11 +208,23 @@
 | `recette-generique-v1-arabie-saoudite-pro-league` | Poisson-MLE générique | challenger |  | autonome |  | challenger |  |  |  |
 | `recette-generique-v2-c1-arabie-saoudite-pro-league` | Poisson-MLE générique | champion |  | autonome |  | champion | ✅ |  |  |
 
+## argentine-reserve-league (1)
+
+| model_key | famille | type | date de gel | rôle clé | paire | statut | champion | marché | hash |
+|---|---|---|---|---|---|---|---|---|---|
+| `recette-generique-v1-argentine-reserve-league` | Poisson-MLE générique | champion |  | autonome |  | champion | ✅ |  |  |
+
 ## armenie-first-league (1)
 
 | model_key | famille | type | date de gel | rôle clé | paire | statut | champion | marché | hash |
 |---|---|---|---|---|---|---|---|---|---|
 | `recette-generique-v1-armenie-first-league` | Poisson-MLE générique | champion |  | autonome |  | champion | ✅ |  |  |
+
+## armenie-premier-league (1)
+
+| model_key | famille | type | date de gel | rôle clé | paire | statut | champion | marché | hash |
+|---|---|---|---|---|---|---|---|---|---|
+| `recette-generique-v1-armenie-premier-league` | Poisson-MLE générique | champion |  | autonome |  | champion | ✅ |  |  |
 
 ## autriche-2-liga (1)
 
@@ -454,6 +466,12 @@
 |---|---|---|---|---|---|---|---|---|---|
 | `recette-generique-v1-division-profesional-clausura` | Poisson-MLE générique | champion |  | autonome |  | champion | ✅ |  |  |
 
+## druha-liga (1)
+
+| model_key | famille | type | date de gel | rôle clé | paire | statut | champion | marché | hash |
+|---|---|---|---|---|---|---|---|---|---|
+| `recette-generique-v1-druha-liga` | Poisson-MLE générique | champion |  | autonome |  | champion | ✅ |  |  |
+
 ## ecosse-championship (3)
 
 | model_key | famille | type | date de gel | rôle clé | paire | statut | champion | marché | hash |
@@ -636,6 +654,12 @@
 | model_key | famille | type | date de gel | rôle clé | paire | statut | champion | marché | hash |
 |---|---|---|---|---|---|---|---|---|---|
 | `recette-generique-v1-indonesie-liga-1` | Poisson-MLE générique | champion |  | autonome |  | champion | ✅ |  |  |
+
+## iraqi-league (1)
+
+| model_key | famille | type | date de gel | rôle clé | paire | statut | champion | marché | hash |
+|---|---|---|---|---|---|---|---|---|---|
+| `recette-generique-v1-iraqi-league` | Poisson-MLE générique | champion |  | autonome |  | champion | ✅ |  |  |
 
 ## irlande-du-nord-championship (1)
 
@@ -981,6 +1005,18 @@
 | model_key | famille | type | date de gel | rôle clé | paire | statut | champion | marché | hash |
 |---|---|---|---|---|---|---|---|---|---|
 | `recette-generique-v1-non-league-premier-northern` | Poisson-MLE générique | champion |  | autonome |  | champion | ✅ |  |  |
+
+## non-league-premier-southern-central (1)
+
+| model_key | famille | type | date de gel | rôle clé | paire | statut | champion | marché | hash |
+|---|---|---|---|---|---|---|---|---|---|
+| `recette-generique-v1-non-league-premier-southern-central` | Poisson-MLE générique | champion |  | autonome |  | champion | ✅ |  |  |
+
+## non-league-premier-southern-south (1)
+
+| model_key | famille | type | date de gel | rôle clé | paire | statut | champion | marché | hash |
+|---|---|---|---|---|---|---|---|---|---|
+| `recette-generique-v1-non-league-premier-southern-south` | Poisson-MLE générique | champion |  | autonome |  | champion | ✅ |  |  |
 
 ## norvege-1-division (2)
 
@@ -1358,6 +1394,12 @@
 |---|---|---|---|---|---|---|---|---|---|
 | `recette-generique-v1-tunisie-ligue-1` | Poisson-MLE générique | challenger |  | autonome |  | challenger |  |  |  |
 | `recette-generique-v2-c1-tunisie-ligue-1` | Poisson-MLE générique | champion |  | autonome |  | champion | ✅ |  |  |
+
+## tunisie-ligue-2 (1)
+
+| model_key | famille | type | date de gel | rôle clé | paire | statut | champion | marché | hash |
+|---|---|---|---|---|---|---|---|---|---|
+| `recette-generique-v1-tunisie-ligue-2` | Poisson-MLE générique | champion |  | autonome |  | champion | ✅ |  |  |
 
 ## turquie-1-lig (1)
 
